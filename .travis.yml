@@ -1,0 +1,27 @@
+language: ruby
+cache: bundler
+
+sudo: required
+dist: trusty
+
+group: edge
+
+addons:
+  apt:
+    sources:
+    - chef-current-trusty
+    packages:
+    - chefdk
+
+matrix:
+  include:
+  - os: osx
+    rvm: 2.3.1
+    before_install:
+      - brew update
+    osx_image: xcode9
+
+services: docker
+
+script:
+- KITCHEN_LOCAL_YAML=.kitchen.localhost.yml bundle exec kitchen verify macosx
