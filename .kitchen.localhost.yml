@@ -13,4 +13,4 @@ platforms:
 suites:
   - name: default
     run_list:
-      - myworkstation::osx
+      - test::default
