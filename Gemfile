@@ -9,7 +9,6 @@ gem 'rubocop'
 
 group :integration do
   gem 'kitchen-dokken'
-  gem 'kitchen-inspec'
   gem 'kitchen-localhost'
   gem 'kitchen-vagrant'
   gem 'test-kitchen'
