@@ -24,4 +24,4 @@ matrix:
 services: docker
 
 script:
-- KITCHEN_LOCAL_YAML=.kitchen.localhost.yml bundle exec kitchen verify macosx
+- KITCHEN_LOCAL_YAML=.kitchen.localhost.yml bundle exec kitchen verify macosx-10
