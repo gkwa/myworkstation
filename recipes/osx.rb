@@ -1,6 +1,13 @@
 include_recipe 'homebrew'
 
 %w(
+  slate
+  vlc
+  the-unarchiver
+  visual-studio-code
+  spectacle
+  alfred
+  kindle
   minikube
   iterm2
   postman
@@ -16,12 +23,12 @@ include_recipe 'homebrew'
   google-chrome
   firefox
   xquartz
-  java
 ).each do |c|
   homebrew_cask c
 end
 
 %w(
+  pyenv-virtualenv
   bower
   dvm
   ledger
@@ -219,7 +226,6 @@ end
   openexr
   openssl
   openvpn
-  otto
   p11-kit
   p7zip
   packer
