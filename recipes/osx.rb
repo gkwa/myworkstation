@@ -1,7 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
-  slate
+  amethyst
   vlc
   the-unarchiver
   visual-studio-code
