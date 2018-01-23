@@ -28,6 +28,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  duck
   restic
   pyenv-virtualenv
   bower
