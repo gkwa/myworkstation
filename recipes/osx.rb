@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  cyberduck
   amethyst
   vlc
   the-unarchiver
