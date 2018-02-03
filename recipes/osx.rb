@@ -171,30 +171,6 @@ end
   kubernetes-helm
   lame
   leptonica
-  libassuan
-  libatomic_ops
-  libcroco
-  libev
-  libevent
-  libffi
-  libgcrypt
-  libgpg-error
-  libksba
-  libpng
-  librsvg
-  libsigc++
-  libssh2
-  libtasn1
-  libtermkey
-  libtiff
-  libtool
-  libunistring
-  libusb
-  libusb-compat
-  libuv
-  libvterm
-  libxml2
-  libyaml
   little-cms
   lsof
   lua
