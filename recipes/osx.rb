@@ -127,7 +127,6 @@ end
   glib
   glibmm
   gmp
-  gmp4
   gnu-getopt
   gnu-indent
   gnu-sed
@@ -161,7 +160,6 @@ end
   intltool
   iproute2mac
   irssi
-  isl011
   jansson
   jemalloc
   jpeg
@@ -182,7 +180,6 @@ end
   libgcrypt
   libgpg-error
   libksba
-  libmpc08
   libpng
   librsvg
   libsigc++
@@ -210,7 +207,6 @@ end
   mitmproxy
   mobile-shell
   mono
-  mpfr2
   msgpack
   mutt
   n
