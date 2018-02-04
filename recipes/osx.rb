@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  webpack
   cyberduck
   amethyst
   vlc
