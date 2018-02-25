@@ -1,6 +1,9 @@
 include_recipe 'homebrew'
 
 %w(
+  virtualbox
+  virtualbox-extension-pack
+  flycut
   cyberduck
   amethyst
   vlc
@@ -20,7 +23,6 @@ include_recipe 'homebrew'
   tunnelblick
   vagrant
   docker
-  virtualbox
   google-chrome
   firefox
   xquartz
