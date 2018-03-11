@@ -37,6 +37,7 @@ end
   bower
   dvm
   ledger
+  git-series
   ack
   apr
   apr-util
