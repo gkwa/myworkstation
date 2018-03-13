@@ -32,6 +32,7 @@ end
 
 %w(
   duck
+  cadaver
   restic
   pyenv-virtualenv
   bower
