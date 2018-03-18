@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  neo4j
   virtualbox
   virtualbox-extension-pack
   flycut
