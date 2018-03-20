@@ -1,7 +1,6 @@
 include_recipe 'homebrew'
 
 %w(
-  goodsync
   neo4j
   virtualbox
   virtualbox-extension-pack
