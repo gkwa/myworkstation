@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  pycharm
   neo4j
   virtualbox
   virtualbox-extension-pack
