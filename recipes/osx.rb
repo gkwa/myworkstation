@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  yed
   pycharm
   neo4j
   virtualbox
