@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  colordiff
   yed
   pycharm
   neo4j
@@ -34,6 +35,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  wdiff
   duck
   cadaver
   restic
