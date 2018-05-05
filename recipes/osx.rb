@@ -35,6 +35,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  pipenv
   wdiff
   duck
   cadaver
