@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  google-cloud-sdk
   colordiff
   yed
   pycharm
