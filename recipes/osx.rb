@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  mysql-shell
   google-cloud-sdk
   colordiff
   yed
