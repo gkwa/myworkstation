@@ -38,7 +38,6 @@ end
 
 %w(
   watchman
-  pipenv
   wdiff
   duck
   cadaver
