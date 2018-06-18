@@ -37,6 +37,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  cassandra
   watchman
   wdiff
   duck
