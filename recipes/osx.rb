@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  hammerspoon
   mysql-shell
   google-cloud-sdk
   colordiff
@@ -37,6 +38,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  ranger
   cassandra
   watchman
   wdiff
