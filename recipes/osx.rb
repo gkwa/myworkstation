@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  powershell
   hammerspoon
   mysql-shell
   google-cloud-sdk
