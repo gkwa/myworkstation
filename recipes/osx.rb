@@ -26,7 +26,6 @@ include_recipe 'homebrew'
   screenflick
   dropbox
   slack
-  p4merge
   tunnelblick
   vagrant
   docker
