@@ -5,7 +5,6 @@ include_recipe 'homebrew'
   hammerspoon
   mysql-shell
   google-cloud-sdk
-  colordiff
   yed
   pycharm
   neo4j
