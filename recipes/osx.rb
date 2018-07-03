@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  chromedriver
   powershell
   hammerspoon
   mysql-shell
@@ -61,7 +62,6 @@ end
   automake
   autossh
   aws-cfn-tools
-  aws-cloudsearch
   aws-elasticache
   awscli
   bash
@@ -80,7 +80,6 @@ end
   cairomm
   camlp4
   chrome-cli
-  chromedriver
   clasp
   cloog018
   cloud-watch
