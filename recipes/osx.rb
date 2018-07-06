@@ -1,6 +1,7 @@
 include_recipe 'homebrew'
 
 %w(
+  mongodb
   chromedriver
   powershell
   hammerspoon
