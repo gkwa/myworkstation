@@ -39,6 +39,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  terraforming
   ranger
   cassandra
   watchman
