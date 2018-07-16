@@ -39,6 +39,7 @@ include_recipe 'homebrew'
 end
 
 %w(
+  bazel
   terraforming
   ranger
   cassandra
