@@ -39,6 +39,8 @@ include_recipe 'homebrew'
 end
 
 %w(
+  etcd
+  timewarrior
   bazel
   terraforming
   ranger
