@@ -38,7 +38,7 @@ include_recipe 'homebrew'
   homebrew_cask c
 end
 
-%w(
+package %w(
   etcd
   timewarrior
   bazel
@@ -293,9 +293,7 @@ end
   yajl
   yarn
   yasm
-).each do |p|
-  package p do
-    action :install
-    ignore_failure true
-  end
+) do
+  action :install
+  ignore_failure true
 end
