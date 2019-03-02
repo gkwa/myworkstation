@@ -38,7 +38,7 @@ include_recipe 'homebrew'
   homebrew_cask c
 end
 
-package %w(
+package_list = %w(
   etcd
   timewarrior
   bazel
@@ -293,7 +293,9 @@ package %w(
   yajl
   yarn
   yasm
-) do
+)
+
+package package_list do
   action :install
   ignore_failure true
 end
