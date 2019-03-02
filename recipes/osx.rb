@@ -1,6 +1,6 @@
 include_recipe 'homebrew'
 
-execute 'virtualbox support'do
+execute 'virtualbox support' do
   command <<-EOH
     sudo spctl --master-disable
   EOH
@@ -10,7 +10,7 @@ end
 homebrew_cask 'virtualbox'
 homebrew_cask 'virtualbox-extension-pack'
 
-execute 'virtualbox support'do
+execute 'virtualbox support' do
   command <<-EOH
     sudo spctl --master-enable
   EOH
