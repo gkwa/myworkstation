@@ -10,10 +10,9 @@ include_recipe 'homebrew'
   hammerspoon
   mysql-shell
   google-cloud-sdk
-  yed
+  intellij-idea
   pycharm
   neo4j
-  flycut
   cyberduck
   amethyst
   vlc
