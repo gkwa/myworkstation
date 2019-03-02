@@ -356,11 +356,13 @@ end
 
 homebrew_tap 'azure/draft'
 package 'azure/draft/draft' do
+  action :install
   ignore_failure true
 end
 
 homebrew_tap 'habitat-sh/habitat'
 package 'hab' do
+  action :install
   ignore_failure true
 end
 
