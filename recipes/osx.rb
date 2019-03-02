@@ -39,6 +39,63 @@ include_recipe 'homebrew'
 end
 
 package_list = %w(
+  asciidoc
+  azure-cli
+  cdrtools
+  clingo
+  colordiff
+  confuse
+  cython
+  docbook
+  draft
+  easy-tag
+  exercism
+  flac
+  fpp
+  freerdp
+  fribidi
+  go-bindata
+  gpatch
+  gpgme
+  graphite2
+  gsettings-desktop-schemas
+  gtk+3
+  hab
+  httpd
+  id3lib
+  iftop
+  isl
+  jsonnet
+  kops
+  kubectx
+  mosh
+  mtr
+  neon
+  nethogs
+  nload
+  npth
+  opencore-amr
+  openjpeg
+  openssl@1.1
+  opus
+  perl
+  pipenv
+  qt
+  rtmpdump
+  rubberband
+  snappy
+  source-highlight
+  speex
+  taglib
+  theora
+  travis
+  unbound
+  utf8proc
+  vde
+  wavpack
+  webp
+  x265
+  yq
   golang
   etcd
   timewarrior
