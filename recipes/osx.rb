@@ -41,8 +41,6 @@ packages = %w(
   azure-cli
   cdrtools
   clingo
-  colordiff
-  confuse
   cython
   docbook
   easy-tag
@@ -346,6 +344,12 @@ packages = %w(
   yarn
   yasm
 )
+
+package "Instll 2 packages at once" do
+  action :install
+  ignore_failure true
+  package_name %( confuse colordiff )
+end
 
 packages.each do |p|
   package p do
