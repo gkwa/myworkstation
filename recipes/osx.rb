@@ -27,5 +27,3 @@ package 'hab' do
   action :install
   ignore_failure true
 end
-
-casks.each { |c| homebrew_cask c }
