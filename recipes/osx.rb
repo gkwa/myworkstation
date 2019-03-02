@@ -47,7 +47,7 @@ package_list = %w(
   confuse
   cython
   docbook
-  draft
+  azure/draft/draft
   easy-tag
   exercism
   flac
