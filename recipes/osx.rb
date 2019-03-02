@@ -1,115 +1,46 @@
 include_recipe 'homebrew'
 
 casks = %w(
-  virtualbox
-  virtualbox-extension-pack
-  phantomjs
-  mongodb
-  chromedriver
-  powershell
-  hammerspoon
-  mysql-shell
-  google-cloud-sdk
-  intellij-idea
-  pycharm
-  neo4j
-  cyberduck
-  amethyst
-  vlc
-  the-unarchiver
-  visual-studio-code
-  spectacle
   alfred
+  amethyst
+  charles
+  chromedriver
+  cyberduck
+  docker
+  dropbox
+  firefox
+  google-chrome
+  google-cloud-sdk
+  hammerspoon
+  intellij-idea
+  iterm2
   kindle
   minikube
-  iterm2
+  mongodb
+  mysql-shell
+  neo4j
+  phantomjs
   postman
-  charles
+  powershell
+  pycharm
   screenflick
-  dropbox
   slack
+  spectacle
+  the-unarchiver
   tunnelblick
   vagrant
-  docker
-  google-chrome
-  firefox
+  virtualbox
+  virtualbox-extension-pack
+  visual-studio-code
+  vlc
   xquartz
 )
 
 packages = %w(
-  asciidoc
-  azure-cli
-  cdrtools
-  clingo
-  cython
-  docbook
-  easy-tag
-  exercism
-  flac
-  fpp
-  freerdp
-  fribidi
-  go-bindata
-  gpatch
-  gpgme
-  graphite2
-  gsettings-desktop-schemas
-  gtk+3
-  httpd
-  id3lib
-  iftop
-  isl
-  jsonnet
-  kops
-  kubectx
-  mosh
-  mtr
-  neon
-  nethogs
-  nload
-  npth
-  opencore-amr
-  openjpeg
-  openssl
-  opus
-  perl
-  pipenv
-  qt
-  rtmpdump
-  rubberband
-  snappy
-  source-highlight
-  speex
-  taglib
-  theora
-  travis
-  unbound
-  utf8proc
-  vde
-  wavpack
-  webp
-  x265
-  yq
-  golang
-  etcd
-  timewarrior
-  bazel
-  terraforming
-  ranger
-  cassandra
-  watchman
-  wdiff
-  duck
-  cadaver
-  restic
-  pyenv-virtualenv
-  bower
-  dvm
-  ledger
-  git-series
   ack
   apr
   apr-util
+  asciidoc
   aspcud
   aspell
   atk
@@ -121,23 +52,30 @@ packages = %w(
   aws-cfn-tools
   aws-elasticache
   awscli
+  azure-cli
   bash
   bash-completion
   bats
   bazaar
   bazel
+  bazel
   bdw-gc
   blackbox
   boost
   boost-build
+  bower
   bsdiff
   bup
   c-ares
+  cadaver
   cairo
   cairomm
   camlp4
+  cassandra
+  cdrtools
   chrome-cli
   clasp
+  clingo
   cloog018
   cloud-watch
   cmake
@@ -147,19 +85,24 @@ packages = %w(
   ctags
   cunit
   curl
+  cython
   d-bus
   dbus
   dep
   dialog
   dirmngr
   dnsmasq
+  docbook
   docker
   docker-machine
   docker-machine-driver-xhyve
   dos2unix
   dpkg
   duck
+  duck
   dvm
+  dvm
+  easy-tag
   ec2-ami-tools
   ec2-api-tools
   editorconfig
@@ -169,14 +112,20 @@ packages = %w(
   emacs
   enscript
   entr
+  etcd
   exa
+  exercism
   faad2
   ffmpeg
   findutils
   fish
+  flac
   fontconfig
   fping
+  fpp
+  freerdp
   freetype
+  fribidi
   fswatch
   fzf
   gawk
@@ -191,6 +140,7 @@ packages = %w(
   git
   git-extras
   git-lfs
+  git-series
   git-when-merged
   gitversion
   glib
@@ -203,41 +153,55 @@ packages = %w(
   gnupg
   gnupg2
   gnutls
-  go
+  go-bindata
   goaccess
   gobject-introspection
+  golang
+  gpatch
+  gpgme
   gradle
+  graphite2
   graphviz
   grep
   gringo
   groovy
+  gsettings-desktop-schemas
   gsl
   gtk+
+  gtk+3
   gtkmm
   guile
   harfbuzz
   hicolor-icon-theme
   highlight
   htop-osx
+  httpd
   httpie
   hub
   hugo
   icu4c
+  id3lib
+  iftop
   ilmbase
   imagemagick
   intltool
   iproute2mac
   irssi
+  isl
   jansson
   jemalloc
   jpeg
   jq
+  jsonnet
   jsonpp
   juju
+  kops
   kqwait
+  kubectx
   kubernetes-cli
   kubernetes-helm
   lame
+  ledger
   leptonica
   little-cms
   lsof
@@ -251,24 +215,35 @@ packages = %w(
   mitmproxy
   mobile-shell
   mono
+  mosh
   msgpack
+  mtr
   mutt
   n
   ncdu
+  neon
   neovim
+  neovim
+  nethogs
   nettle
   nghttp2
   nginx
+  nload
   nmap
   node
+  npth
   nvm
   ocaml
   ocamlbuild
   oniguruma
   opam
+  opencore-amr
   openexr
+  openjpeg
+  openssl
   openssl
   openvpn
+  opus
   p11-kit
   p7zip
   packer
@@ -278,8 +253,10 @@ packages = %w(
   patchutils
   pcre
   pcre2
+  perl
   pidof
   pinentry
+  pipenv
   pixman
   pkg-config
   popt
@@ -288,10 +265,13 @@ packages = %w(
   pssh
   pth
   pyenv
+  pyenv-virtualenv
   pyenv-virtualenvwrapper
   python
   python3
   qemu
+  qt
+  ranger
   rbenv
   rdesktop
   re2c
@@ -299,42 +279,60 @@ packages = %w(
   reattach-to-user-namespace
   recode
   redo
+  restic
   rpm2cpio
   rsync
+  rtmpdump
+  rubberband
   ruby-build
   rust
   s-lang
   scons
   selenium-server-standalone
+  snappy
+  source-highlight
   spdylay
+  speex
   sphinx-doc
   sqlite
   squid
-  neovim
   ssh-copy-id
   sshuttle
   stow
   subversion
+  taglib
   terminal-notifier
   terraform
+  terraforming
   tesseract
   texi2html
   the_silver_searcher
+  theora
   tig
+  timewarrior
   tmux
   tokyo-cabinet
+  travis
   tree
+  unbound
   unibilium
   unixodbc
+  utf8proc
   vault
+  vde
   vim
   watch
+  watchman
+  wavpack
+  wdiff
+  webp
   wemux
   wget
   wiggle
   winexe
   wireshark
   x264
+  x265
   xhyve
   xml-coreutils
   xmlstarlet
@@ -343,6 +341,7 @@ packages = %w(
   yajl
   yarn
   yasm
+  yq
 )
 
 package "Instll 2 packages at once" do
