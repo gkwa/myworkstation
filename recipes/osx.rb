@@ -1,6 +1,8 @@
 include_recipe 'homebrew'
 
 %w(
+  virtualbox
+  virtualbox-extension-pack
   phantomjs
   mongodb
   chromedriver
@@ -11,8 +13,6 @@ include_recipe 'homebrew'
   yed
   pycharm
   neo4j
-  virtualbox
-  virtualbox-extension-pack
   flycut
   cyberduck
   amethyst
