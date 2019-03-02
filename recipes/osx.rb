@@ -18,6 +18,7 @@ execute 'virtualbox support'do
 end
 
 %w(
+  phantomjs
   mongodb
   chromedriver
   powershell
@@ -243,7 +244,6 @@ end
   patchutils
   pcre
   pcre2
-  phantomjs
   pidof
   pinentry
   pixman
