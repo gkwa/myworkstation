@@ -2,7 +2,7 @@ include_recipe 'homebrew'
 
 execute 'virtualbox support' do
   command <<-EOH
-    sudo spctl --master-disable
+    spctl --master-disable
   EOH
   not_if 'type -a VBoxManage'
 end
@@ -12,7 +12,7 @@ homebrew_cask 'virtualbox-extension-pack'
 
 execute 'virtualbox support' do
   command <<-EOH
-    sudo spctl --master-enable
+    spctl --master-enable
   EOH
   not_if 'type -a VBoxManage'
 end
