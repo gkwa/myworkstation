@@ -70,7 +70,7 @@ packages = %w(
   npth
   opencore-amr
   openjpeg
-  openssl@1.1
+  openssl
   opus
   perl
   pipenv
