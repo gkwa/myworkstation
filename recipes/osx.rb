@@ -2,6 +2,13 @@ include_recipe 'homebrew'
 
 execute 'virtualbox support' do
   command <<-EOH
+    sudo spctl -a -v /Applications/VirtualBox.app
+  EOH
+  not_if 'type -a VBoxManage'
+end
+
+execute 'virtualbox support' do
+  command <<-EOH
     sudo spctl --master-disable
   EOH
   not_if 'type -a VBoxManage'
