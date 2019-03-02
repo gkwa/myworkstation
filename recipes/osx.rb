@@ -351,12 +351,7 @@ package_list = %w(
   yasm
 )
 
-execute 'azure draft' do
-  command <<-EOH
-    brew tap azure/draft
-  EOH
-#   not_if 'type -a VBoxManage'
-end
+homebrew_tap 'azure/draft'
 
 package 'azure/draft/draft' do
   action :install
