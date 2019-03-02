@@ -357,8 +357,9 @@ package 'hab' do
   ignore_failure true
 end
 
-package packages do
+package 'Install packages' do
   ignore_failure true
+  package_name packages
 end
 
 casks.each { |c| homebrew_cask c }
