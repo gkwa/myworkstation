@@ -39,6 +39,7 @@ include_recipe 'homebrew'
 end
 
 package_list = %w(
+  golang
   etcd
   timewarrior
   bazel
