@@ -124,7 +124,6 @@ package_list = %w(
   fish
   fontconfig
   fping
-  freerdp
   freetype
   fswatch
   fzf
