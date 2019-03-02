@@ -57,7 +57,6 @@ packages = %w(
   graphite2
   gsettings-desktop-schemas
   gtk+3
-  hab
   httpd
   id3lib
   iftop
@@ -351,6 +350,11 @@ packages = %w(
 
 homebrew_tap 'azure/draft'
 package 'azure/draft/draft' do
+  ignore_failure true
+end
+
+homebrew_tap 'habitat-sh/habitat'
+package 'hab' do
   ignore_failure true
 end
 
