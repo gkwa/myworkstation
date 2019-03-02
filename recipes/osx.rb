@@ -1,6 +1,6 @@
 include_recipe 'homebrew'
 
-%w(
+casks = %w(
   virtualbox
   virtualbox-extension-pack
   phantomjs
@@ -34,11 +34,9 @@ include_recipe 'homebrew'
   google-chrome
   firefox
   xquartz
-).each do |c|
-  homebrew_cask c
-end
+)
 
-package_list = %w(
+packages = %w(
   asciidoc
   azure-cli
   cdrtools
@@ -352,11 +350,12 @@ package_list = %w(
 )
 
 homebrew_tap 'azure/draft'
-
 package 'azure/draft/draft' do
   ignore_failure true
 end
 
-package package_list do
+package packages do
   ignore_failure true
 end
+
+casks.each { |c| homebrew_cask c }
