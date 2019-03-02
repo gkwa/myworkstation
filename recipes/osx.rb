@@ -6,7 +6,7 @@ execute 'brew packages' do
 end
 
 execute 'brew packages' do
-  command 'brew cask install alfred amethyst charles chromedriver cyberduck docker dropbox firefox google-chrome google-cloud-sdk hammerspoon intellij-idea iterm2 kindle minikube mongodb mysql-shell neo4j phantomjs postman powershell pycharm screenflick slack spectacle the-unarchiver tunnelblick vagrant virtualbox virtualbox-extension-pack visual-studio-code vlc xquartz
+  command 'brew cask install alfred amethyst charles chromedriver cyberduck docker dropbox firefox google-chrome google-cloud-sdk hammerspoon intellij-idea iterm2 kindle minikube mongodb mysql-shell neo4j phantomjs postman powershell pycharm screenflick slack spectacle the-unarchiver tunnelblick vagrant virtualbox virtualbox-extension-pack visual-studio-code vlc xquartz'
   user 'travis'
 end
 
