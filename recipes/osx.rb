@@ -354,11 +354,9 @@ package_list = %w(
 homebrew_tap 'azure/draft'
 
 package 'azure/draft/draft' do
-  action :install
   ignore_failure true
 end
 
 package package_list do
-  action :install
   ignore_failure true
 end
