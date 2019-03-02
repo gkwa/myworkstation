@@ -18,7 +18,7 @@ matrix:
   - os: osx
     before_install:
       - brew update
-    osx_image: xcode9.2
+    osx_image: xcode9.3
 
 services: docker
 
