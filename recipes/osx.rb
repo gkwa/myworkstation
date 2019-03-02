@@ -347,6 +347,13 @@ packages = %w(
   yasm
 )
 
+packages.each do |p|
+  package p do
+    action :install
+    ignore_failure true
+  end
+end
+
 homebrew_tap 'azure/draft'
 package 'azure/draft/draft' do
   ignore_failure true
@@ -355,11 +362,6 @@ end
 homebrew_tap 'habitat-sh/habitat'
 package 'hab' do
   ignore_failure true
-end
-
-package 'Install packages' do
-  ignore_failure true
-  package_name packages
 end
 
 casks.each { |c| homebrew_cask c }
