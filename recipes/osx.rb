@@ -47,7 +47,6 @@ package_list = %w(
   confuse
   cython
   docbook
-  azure/draft/draft
   easy-tag
   exercism
   flac
@@ -351,6 +350,18 @@ package_list = %w(
   yarn
   yasm
 )
+
+execute 'azure draft' do
+  command <<-EOH
+    brew tap azure/draft
+  EOH
+#   not_if 'type -a VBoxManage'
+end
+
+package 'azure/draft/draft' do
+  action :install
+  ignore_failure true
+end
 
 package package_list do
   action :install
