@@ -1,5 +1,22 @@
 include_recipe 'homebrew'
 
+execute 'virtualbox support'do
+  command <<-EOH
+    sudo spctl -master-disable
+  EOH
+  not_if 'type -a VBoxManage'
+end
+
+homebrew_package 'virtualbox'
+homebrew_package 'virtualbox-extension-pack'
+
+execute 'virtualbox support'do
+  command <<-EOH
+    sudo spctl -master-enable
+  EOH
+  not_if 'type -a VBoxManage'
+end
+
 %w(
   mongodb
   chromedriver
@@ -10,8 +27,6 @@ include_recipe 'homebrew'
   yed
   pycharm
   neo4j
-  virtualbox
-  virtualbox-extension-pack
   flycut
   cyberduck
   amethyst
