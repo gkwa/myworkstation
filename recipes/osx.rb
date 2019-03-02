@@ -7,8 +7,8 @@ execute 'virtualbox support'do
   not_if 'type -a VBoxManage'
 end
 
-homebrew_package 'virtualbox'
-homebrew_package 'virtualbox-extension-pack'
+homebrew_cask 'virtualbox'
+homebrew_cask 'virtualbox-extension-pack'
 
 execute 'virtualbox support'do
   command <<-EOH
