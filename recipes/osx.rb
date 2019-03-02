@@ -208,7 +208,6 @@ packages = %w(
   go
   goaccess
   gobject-introspection
-  gpg-agent
   gradle
   graphviz
   grep
