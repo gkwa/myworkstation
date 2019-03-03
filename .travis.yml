@@ -21,4 +21,4 @@ matrix:
 services: docker
 
 script:
-- travis_wait 50 brew bundle --verbose --verbose --verbose
+- travis_retry travis_wait 50 brew bundle --verbose --verbose --verbose
