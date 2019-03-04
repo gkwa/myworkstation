@@ -11,6 +11,11 @@ osx_image: xcode9.2
 env:
   - BREWFILE=Brewfile
   - BREWFILE=Brewfile2
+  - BREWFILE=Brewfile3
+  - BREWFILE=Brewfile4
+  - BREWFILE=Brewfile5
+  - BREWFILE=Brewfile6
+  - BREWFILE=Brewfile7
 
 services: docker
 
