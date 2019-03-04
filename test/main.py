@@ -3,7 +3,6 @@ from pprint import pprint
 
 from jinja2 import Template
 
-
 COUNT = 30
 
 tpl_travis = Template("""{#- jinja2 -#}
@@ -77,8 +76,8 @@ with open('../Brewfile', 'r') as brewfile:
 data = {}
 data['taps'] = taps
 all = brews + casks
-i=0
-TOTAL_SPLITS=0
+i = 0
+TOTAL_SPLITS = 0
 
 for c in list(chunks(all, COUNT)):
     i += 1
