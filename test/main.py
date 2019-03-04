@@ -27,7 +27,7 @@ env:
 {%- endfor %}
 
 script:
-- travis_retry brew bundle --file=test/$BREWFILE
+- travis_retry brew bundle --file=test/$BREWFILE --verbose
 """)
 
 tpl_brewfile = Template("""{#- jinja2 -#}

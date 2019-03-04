@@ -20,4 +20,4 @@ env:
   - BREWFILE=Brewfile4
 
 script:
-- travis_retry brew bundle --file=test/$BREWFILE
+- travis_retry brew bundle --file=test/$BREWFILE --verbose
