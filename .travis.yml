@@ -9,15 +9,18 @@ os: osx
 osx_image: xcode10.1
 
 env:
-  - BREWFILE=Brewfile
+  - BREWFILE=Brewfile1
   - BREWFILE=Brewfile2
   - BREWFILE=Brewfile3
   - BREWFILE=Brewfile4
   - BREWFILE=Brewfile5
   - BREWFILE=Brewfile6
   - BREWFILE=Brewfile7
+  - BREWFILE=Brewfile8
+  - BREWFILE=Brewfile9
+  - BREWFILE=Brewfile10
 
 services: docker
 
 script:
-- travis_retry brew bundle --file=$BREWFILE
+- travis_retry brew bundle --file=test/$BREWFILE
