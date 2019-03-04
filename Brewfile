@@ -1,6 +1,5 @@
 tap "azure/draft"
 tap "caskroom/cask"
-tap "caskroom/versions"
 tap "facebook/fb"
 tap "habitat-sh/habitat"
 tap "homebrew/bundle"
