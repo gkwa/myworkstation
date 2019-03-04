@@ -3,7 +3,7 @@ from pprint import pprint
 
 from jinja2 import Template
 
-COUNT = 30
+COUNT = 50
 
 tpl_travis = Template("""{#- jinja2 -#}
 language: ruby

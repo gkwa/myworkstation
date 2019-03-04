@@ -15,10 +15,6 @@ env:
   - BREWFILE=Brewfile4
   - BREWFILE=Brewfile5
   - BREWFILE=Brewfile6
-  - BREWFILE=Brewfile7
-  - BREWFILE=Brewfile8
-  - BREWFILE=Brewfile9
-  - BREWFILE=Brewfile10
 
 services: docker
 
