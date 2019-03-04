@@ -13,23 +13,6 @@ before_install:
 env:
   - BREWFILE=Brewfile1
   - BREWFILE=Brewfile2
-  - BREWFILE=Brewfile3
-  - BREWFILE=Brewfile4
-  - BREWFILE=Brewfile5
-  - BREWFILE=Brewfile6
-  - BREWFILE=Brewfile7
-  - BREWFILE=Brewfile8
-  - BREWFILE=Brewfile9
-  - BREWFILE=Brewfile10
-  - BREWFILE=Brewfile11
-  - BREWFILE=Brewfile12
-  - BREWFILE=Brewfile13
-  - BREWFILE=Brewfile14
-  - BREWFILE=Brewfile15
-  - BREWFILE=Brewfile16
-  - BREWFILE=Brewfile17
-  - BREWFILE=Brewfile18
-  - BREWFILE=Brewfile19
 
 services: docker
 
