@@ -6,9 +6,12 @@ dist: trusty
 
 group: edge
 os: osx
-osx_image: xcode10.1
 before_install:
   - brew update
+
+osx_image:
+  - xcode10.1
+  - xcode9.2
 
 env:
   - BREWFILE=Brewfile1

@@ -14,9 +14,12 @@ dist: trusty
 
 group: edge
 os: osx
-osx_image: xcode10.1
 before_install:
   - brew update
+
+osx_image:
+  - xcode10.1
+  - xcode9.2
 
 env:
 {%- for count in range(1,COUNT+1): %}
