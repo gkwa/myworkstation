@@ -9,10 +9,10 @@ tap "neovim/neovim"
 
 brew "brew-cask"
 
+cask "chromedriver"
 cask "alfred"
 cask "amethyst"
 cask "charles"
-cask "chromedriver"
 cask "cyberduck"
 cask "docker"
 cask "dropbox"
