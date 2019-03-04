@@ -26,8 +26,6 @@ env:
   - BREWFILE=Brewfile{{ count }}
 {%- endfor %}
 
-services: docker
-
 script:
 - travis_retry brew bundle --file=test/$BREWFILE
 """)

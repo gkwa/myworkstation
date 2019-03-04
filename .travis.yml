@@ -17,7 +17,5 @@ env:
   - BREWFILE=Brewfile1
   - BREWFILE=Brewfile2
 
-services: docker
-
 script:
 - travis_retry brew bundle --file=test/$BREWFILE
