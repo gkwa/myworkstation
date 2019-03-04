@@ -8,10 +8,9 @@ group: edge
 os: osx
 osx_image: xcode9.2
 
-matrix:
-  include:
-    env: BREWFILE=Brewfile
-    env: BREWFILE=Brewfile2
+env:
+  - BREWFILE=Brewfile
+  - BREWFILE=Brewfile2
 
 services: docker
 
