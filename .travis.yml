@@ -16,6 +16,8 @@ osx_image:
 env:
   - BREWFILE=Brewfile1
   - BREWFILE=Brewfile2
+  - BREWFILE=Brewfile3
+  - BREWFILE=Brewfile4
 
 script:
 - travis_retry brew bundle --file=test/$BREWFILE
