@@ -1,7 +1,6 @@
 tap "caskroom/versions"
 tap "azure/draft"
 tap "caskroom/cask"
-tap "caskroom/versions"
 tap "facebook/fb"
 tap "habitat-sh/habitat"
 tap "homebrew/bundle"
@@ -17,7 +16,6 @@ tap "weaveworks/tap"
 
 
 cask "cask java8"
-cask "visual-studio-code"
 cask "spectacle"
 cask "kindle"
 cask "minikube"
