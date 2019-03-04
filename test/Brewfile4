@@ -15,7 +15,7 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-cask "cask java8"
+cask "java8"
 brew "git-series"
 brew "git-when-merged"
 brew "gitversion"
