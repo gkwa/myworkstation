@@ -15,6 +15,8 @@ dist: trusty
 group: edge
 os: osx
 osx_image: xcode10.1
+before_install:
+  - brew update
 
 env:
 {%- for count in range(1,COUNT+1): %}
