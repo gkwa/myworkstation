@@ -28,10 +28,12 @@ script:
 """)
 
 tpl_brewfile = Template("""{#- jinja2 -#}
-{%- for tap in data.taps -%}
+tap "caskroom/versions"
+{% for tap in data.taps -%}
 {{ tap }}
 {%- endfor %}
 
+cask "cask java8"
 {% for bc in data.casks_brews -%}
 {{ bc }}
 {%- endfor %}

@@ -1,3 +1,4 @@
+tap "caskroom/versions"
 tap "azure/draft"
 tap "caskroom/cask"
 tap "caskroom/versions"
@@ -15,10 +16,9 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-cask "the-unarchiver"
+cask "cask java8"
 cask "visual-studio-code"
 cask "spectacle"
-cask "alfred"
 cask "kindle"
 cask "minikube"
 cask "iterm2"
