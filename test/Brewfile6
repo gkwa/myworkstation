@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "lzo"
 brew "make"
 brew "makedepend"
 brew "maven"
@@ -45,3 +44,4 @@ brew "p11-kit"
 brew "p7zip"
 brew "packer"
 brew "pango"
+brew "pangomm"

@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-cask "vlc"
 cask "the-unarchiver"
 cask "visual-studio-code"
 cask "spectacle"

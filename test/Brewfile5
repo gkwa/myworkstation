@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "hicolor-icon-theme"
 brew "highlight"
 brew "htop-osx"
 brew "httpie"
@@ -45,3 +44,4 @@ brew "lsof"
 brew "lua"
 brew "luajit"
 brew "lynx"
+brew "lzo"

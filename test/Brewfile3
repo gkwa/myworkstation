@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "ec2-ami-tools"
 brew "ec2-api-tools"
 brew "editorconfig"
 brew "eigen"
@@ -45,3 +44,4 @@ brew "gettext"
 brew "ghc"
 brew "giflib"
 brew "gist"
+brew "git"

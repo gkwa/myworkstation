@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "pangomm"
 brew "parallel"
 brew "patchutils"
 brew "pcre"
@@ -45,3 +44,4 @@ brew "recode"
 brew "redo"
 brew "restic"
 brew "rpm2cpio"
+brew "rsync"

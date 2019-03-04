@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "git"
 brew "git-extras"
 brew "git-lfs"
 brew "git-series"
@@ -45,3 +44,4 @@ brew "gtk+"
 brew "gtkmm"
 brew "guile"
 brew "harfbuzz"
+brew "hicolor-icon-theme"

@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "rsync"
 brew "ruby-build"
 brew "rust"
 brew "s-lang"
@@ -45,3 +44,4 @@ brew "unixodbc"
 brew "vault"
 brew "vim"
 brew "watch"
+brew "watchman"

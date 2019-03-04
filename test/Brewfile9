@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-brew "watchman"
 brew "wdiff"
 brew "wemux"
 brew "wget"
@@ -45,3 +44,4 @@ cask "pycharm"
 cask "neo4j"
 cask "cyberduck"
 cask "amethyst"
+cask "vlc"
