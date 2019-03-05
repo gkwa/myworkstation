@@ -59,28 +59,16 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
-with open('../Brewfile', 'r') as brewfile:
+with open('Brewfile', 'r') as brewfile:
     for line in brewfile.readlines():
-        line.strip()
-        mo = re.match(r'^(tap +"([^\"]+)".*)', line)
-        if mo:
+        if re.match(r'^(tap +"([^\"]+)".*)', line):
             taps.append(line)
-            continue
-
-        mo = re.match(r'^(cask +"([^\"]+)".*)', line)
-        if mo:
+        elif re.match(r'^(cask +"([^\"]+)".*)', line):
             casks.append(line)
-            continue
-
-        mo = re.match(r'^(brew +"([^\"]+)".*)', line)
-        if mo:
+        elif re.match(r'^(brew +"([^\"]+)".*)', line):
             brews.append(line)
-            continue
-
-        mo = re.match(r'^(mas +"([^\"]+)".*)', line)
-        if mo:
+        elif re.match(r'^(mas +"([^\"]+)".*)', line):
             mas.append(line)
-            continue
 
 data = {}
 data['taps'] = taps
@@ -91,9 +79,9 @@ TOTAL_SPLITS = 0
 for c in list(chunks(all, COUNT)):
     i += 1
     TOTAL_SPLITS = i
-    with open('Brewfile{}'.format(i), 'w') as brewfile:
+    with open('test/Brewfile{}'.format(i), 'w') as brewfile:
         data['casks_brews'] = c
         brewfile.write(tpl_brewfile.render(data=data))
 
-with open('../.travis.yml', 'w') as travis:
+with open('.travis.yml', 'w') as travis:
     travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))

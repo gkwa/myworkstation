@@ -1,5 +1,5 @@
 test: FORCE
 	rm -f test/Brewfile??
-	cd test && python main.py
+	python test/main.py
 
 FORCE:
