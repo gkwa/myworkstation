@@ -15,7 +15,7 @@ dist: trusty
 group: edge
 os: osx
 before_install:
-- spctl kext-consent disable
+- sudo spctl kext-consent disable
 - brew update
 - echo SOMEVAR="$SOMEVAR"
 
