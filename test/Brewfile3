@@ -16,6 +16,10 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "vault"
+brew "vim", args: ["with-override-system-vi"]
+brew "watch"
+brew "watchman"
 brew "wdiff", args: ["with-gettext"]
 brew "wget"
 brew "wiggle"
@@ -37,8 +41,10 @@ cask "docker"
 cask "docker"
 cask "dropbox"
 cask "firefox"
+cask "gitter"
 cask "google-chrome"
 cask "google-cloud-sdk"
+cask "gpg-suite"
 cask "hammerspoon"
 cask "iterm2"
 cask "kindle"

@@ -92,7 +92,7 @@ brew "gobject-introspection"
 brew "golang"
 brew "gradle"
 brew "graphviz"
-brew "grep"
+brew "grep", args: ["with-default-names"]
 brew "groovy"
 brew "gsl"
 brew "guile"
