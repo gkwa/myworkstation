@@ -43,8 +43,8 @@ cask "spectacle"
 cask "the-unarchiver"
 cask "tunnelblick"
 cask "vagrant"
-cask "virtualbox", args: ["debug", "verbose"]
-cask "virtualbox-extension-pack", args: ["debug", "verbose"]
+cask "virtualbox"
+cask "virtualbox-extension-pack"
 cask "visual-studio-code"
 cask "vlc"
 cask "xquartz"
