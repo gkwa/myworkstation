@@ -16,6 +16,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "tree"
+brew "unibilium"
 brew "unixodbc"
 brew "vault"
 brew "vim"
