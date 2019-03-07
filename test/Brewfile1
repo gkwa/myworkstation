@@ -15,7 +15,6 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
-cask "java8"
 brew "ack"
 brew "apr"
 brew "apr-util"

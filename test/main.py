@@ -39,7 +39,6 @@ tap "caskroom/versions"
 {{ tap }}
 {%- endfor %}
 
-cask "java8"
 {% for bc in data.casks_brews -%}
 {{ bc }}
 {%- endfor %}
