@@ -15,6 +15,7 @@ tap "petems/vault"
 tap "weaveworks/tap"
 
 
+cask "homebrew/cask-versions/java8"
 brew "redo"
 brew "restic"
 brew "rpm2cpio"
