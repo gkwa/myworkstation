@@ -28,7 +28,7 @@ brew "lsof"
 brew "lua"
 brew "luajit"
 brew "lynx"
-brew "make", args: ["with-default-names"]
+brew "make"
 brew "makedepend"
 brew "maven"
 brew "mitmproxy"

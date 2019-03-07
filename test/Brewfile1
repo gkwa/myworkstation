@@ -67,7 +67,7 @@ brew "entr"
 brew "etcd"
 brew "exa"
 brew "faad2"
-brew "findutils", args: ["with-default-names"]
+brew "findutils"
 brew "fontconfig"
 brew "fping"
 brew "fswatch"
@@ -84,15 +84,15 @@ brew "git-lfs"
 brew "git-when-merged"
 brew "gitversion"
 brew "gnu-getopt"
-brew "gnu-indent", args: ["with-default-names"]
-brew "gnu-sed", args: ["with-default-names"]
-brew "gnu-tar", args: ["with-default-names"]
-brew "gnu-which", args: ["with-default-names"]
+brew "gnu-indent"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "gnu-which"
 brew "gobject-introspection"
 brew "golang"
 brew "gradle"
 brew "graphviz"
-brew "grep", args: ["with-default-names"]
+brew "grep"
 brew "groovy"
 brew "gsl"
 brew "guile"
