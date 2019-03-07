@@ -12,7 +12,6 @@ before_install:
 
 osx_image:
 - xcode10.1
-- xcode9.2
 
 env:
 - BREWFILE=Brewfile1

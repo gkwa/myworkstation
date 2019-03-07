@@ -20,7 +20,6 @@ before_install:
 
 osx_image:
 - xcode10.1
-- xcode9.2
 
 env:
 {%- for count in range(1,COUNT+1): %}
