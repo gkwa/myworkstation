@@ -40,8 +40,8 @@ tap "caskroom/versions"
 {%- endfor %}
 
 cask "java8"
-{% for bc in data.casks_brews -%}
-{{ bc }}
+{% for item in data.casks_brews_mas -%}
+{{ item }}
 {%- endfor %}
 """)
 
@@ -58,28 +58,28 @@ def chunks(l, n):
         yield l[i:i + n]
 
 
+def add_to_bucket(line):
+    re.match(r'^(tap +"([^\"]+)".*)', line) and taps.append(line)
+    re.match(r'^(cask +"([^\"]+)".*)', line) and casks.append(line)
+    re.match(r'^(brew +"([^\"]+)".*)', line) and brews.append(line)
+    re.match(r'^(mas +"([^\"]+)".*)', line) and mas.append(line)
+
+
 with open('Brewfile', 'r') as brewfile:
     for line in brewfile.readlines():
-        if re.match(r'^(tap +"([^\"]+)".*)', line):
-            taps.append(line)
-        elif re.match(r'^(cask +"([^\"]+)".*)', line):
-            casks.append(line)
-        elif re.match(r'^(brew +"([^\"]+)".*)', line):
-            brews.append(line)
-        elif re.match(r'^(mas +"([^\"]+)".*)', line):
-            mas.append(line)
+        add_to_bucket(line)
 
 data = {}
 data['taps'] = taps
-all = brews + casks
+all = brews + casks + mas
 i = 0
 TOTAL_SPLITS = 0
 
-for c in list(chunks(all, COUNT)):
+for chunk in list(chunks(all, COUNT)):
     i += 1
     TOTAL_SPLITS = i
     with open('test/Brewfile{}'.format(i), 'w') as brewfile:
-        data['casks_brews'] = c
+        data['casks_brews_mas'] = chunk
         brewfile.write(tpl_brewfile.render(data=data))
 
 with open('.travis.yml', 'w') as travis:
