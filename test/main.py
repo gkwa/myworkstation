@@ -46,12 +46,6 @@ cask "java8"
 """)
 
 
-brews = []
-casks = []
-taps = []
-mas = []
-
-
 def chunks(l, n):
     """Yield successive n-sized chunks from l."""
     for i in range(0, len(l), n):
@@ -65,22 +59,33 @@ def add_to_bucket(line):
     re.match(r'^(mas +"([^\"]+)".*)', line) and mas.append(line)
 
 
-with open('Brewfile', 'r') as brewfile:
-    for line in brewfile.readlines():
-        add_to_bucket(line)
+brews = []
+casks = []
+taps = []
+mas = []
 
-data = {}
-data['taps'] = taps
-all = brews + casks + mas
-i = 0
-TOTAL_SPLITS = 0
 
-for chunk in list(chunks(all, COUNT)):
-    i += 1
-    TOTAL_SPLITS = i
-    with open('test/Brewfile{}'.format(i), 'w') as brewfile:
-        data['casks_brews_mas'] = chunk
-        brewfile.write(tpl_brewfile.render(data=data))
+def main():
 
-with open('.travis.yml', 'w') as travis:
-    travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))
+    with open('Brewfile', 'r') as brewfile:
+        for line in brewfile.readlines():
+            add_to_bucket(line)
+
+    data = {}
+    data['taps'] = taps
+    all = brews + casks + mas
+    TOTAL_SPLITS = 0
+
+    for chunk in list(chunks(all, COUNT)):
+        TOTAL_SPLITS += 1
+        with open('test/Brewfile{}'.format(TOTAL_SPLITS), 'w') as brewfile:
+            data['casks_brews_mas'] = chunk
+            brewfile.write(tpl_brewfile.render(data=data))
+
+    with open('.travis.yml', 'w') as travis:
+        travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))
+
+
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
