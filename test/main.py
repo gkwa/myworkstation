@@ -82,7 +82,7 @@ def main():
             data['casks_brews_mas'] = chunk
             brewfile.write(tpl_brewfile.render(data=data))
 
-    with open('.travis.yml', 'w') as travis:
+    with open('../.travis.yml', 'w') as travis:
         travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))
 
 
