@@ -67,7 +67,7 @@ mas = []
 
 def main():
 
-    with open('Brewfile', 'r') as brewfile:
+    with open('../Brewfile', 'r') as brewfile:
         for line in brewfile.readlines():
             add_to_bucket(line)
 
@@ -78,7 +78,7 @@ def main():
 
     for chunk in list(chunks(all, COUNT)):
         TOTAL_SPLITS += 1
-        with open('test/Brewfile{}'.format(TOTAL_SPLITS), 'w') as brewfile:
+        with open('Brewfile{}'.format(TOTAL_SPLITS), 'w') as brewfile:
             data['casks_brews_mas'] = chunk
             brewfile.write(tpl_brewfile.render(data=data))
 
