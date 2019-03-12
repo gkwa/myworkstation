@@ -52,7 +52,7 @@ cask "spectacle"
 cask "the-unarchiver"
 cask "tunnelblick"
 cask "vagrant"
-cask "vault", args: ['--build-from-source']
+cask "vault", args: ["build-from-source"]
 cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "visual-studio-code"
