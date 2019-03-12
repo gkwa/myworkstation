@@ -12,7 +12,6 @@ tap "ksonnet/tap"
 tap "martido/brew-graph"
 tap "mas-cli/tap"
 tap "neovim/neovim"
-tap "petems/vault"
 tap "weaveworks/tap"
 
 
