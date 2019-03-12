@@ -16,6 +16,7 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "pidof"
 brew "pinentry"
 brew "pixman"
 brew "protobuf"
@@ -85,4 +86,3 @@ brew "yajl"
 brew "yarn"
 brew "z"
 cask "caskroom/versions/java8"
-cask "alfred"
