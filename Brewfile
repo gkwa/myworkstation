@@ -1,1 +1,1 @@
-cask "vault", args: ["build-from-source"]
+brew "vault", args: ["build-from-source"]

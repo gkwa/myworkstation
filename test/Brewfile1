@@ -2,4 +2,4 @@ tap "caskroom/versions"
 
 
 cask "java8"
-cask "vault", args: ["build-from-source"]
+brew "vault", args: ["build-from-source"]
