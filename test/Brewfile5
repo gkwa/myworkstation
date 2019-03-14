@@ -17,6 +17,7 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "wiggle"
 brew "wireshark"
 brew "x264"
 brew "xhyve"
@@ -66,4 +67,3 @@ cask "skype"
 cask "slack"
 cask "spectacle"
 cask "the-unarchiver"
-cask "tunnelblick"
