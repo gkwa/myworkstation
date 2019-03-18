@@ -17,8 +17,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
-brew "brew-graph"
-brew "bsdiff"
-brew "c-ares"
-brew "cairomm"
-brew "cassandra"
+brew "recode"
+brew "redo"
+brew "restic"
+brew "rpm2cpio"
+brew "rsync"

@@ -3,7 +3,21 @@ from pprint import pprint
 
 from jinja2 import Template
 
-COUNT = 50
+COUNT = 5
+
+tpl_azure = Template("""{#- jinja2 -#}
+trigger:
+- master
+
+jobs:
+{%- for count in range(1,COUNT+1): %}
+- job: macOS_Brewfile{{ count }}
+  pool:
+    vmImage: 'macOS-10.13'
+  steps:
+  - script: brew bundle --verbose --file=Brewfile{{ count }}
+{%- endfor %}
+""")
 
 tpl_travis = Template("""{#- jinja2 -#}
 language: ruby
@@ -84,7 +98,8 @@ def main():
 
     with open('../.travis.yml', 'w') as travis:
         travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))
-
+    with open('../azure-pipelines.yml', 'w') as azure:
+        azure.write(tpl_azure.render(COUNT=TOTAL_SPLITS))
 
 if __name__ == "__main__":
     # execute only if run as a script
