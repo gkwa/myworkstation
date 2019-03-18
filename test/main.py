@@ -15,7 +15,7 @@ jobs:
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile{{ count }}
+  - script: brew bundle --verbose --file=test/Brewfile{{ count }}
 {%- endfor %}
 """)
 

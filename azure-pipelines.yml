@@ -6,259 +6,259 @@ jobs:
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile1
+  - script: brew bundle --verbose --file=test/Brewfile1
 - job: macOS_Brewfile2
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile2
+  - script: brew bundle --verbose --file=test/Brewfile2
 - job: macOS_Brewfile3
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile3
+  - script: brew bundle --verbose --file=test/Brewfile3
 - job: macOS_Brewfile4
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile4
+  - script: brew bundle --verbose --file=test/Brewfile4
 - job: macOS_Brewfile5
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile5
+  - script: brew bundle --verbose --file=test/Brewfile5
 - job: macOS_Brewfile6
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile6
+  - script: brew bundle --verbose --file=test/Brewfile6
 - job: macOS_Brewfile7
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile7
+  - script: brew bundle --verbose --file=test/Brewfile7
 - job: macOS_Brewfile8
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile8
+  - script: brew bundle --verbose --file=test/Brewfile8
 - job: macOS_Brewfile9
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile9
+  - script: brew bundle --verbose --file=test/Brewfile9
 - job: macOS_Brewfile10
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile10
+  - script: brew bundle --verbose --file=test/Brewfile10
 - job: macOS_Brewfile11
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile11
+  - script: brew bundle --verbose --file=test/Brewfile11
 - job: macOS_Brewfile12
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile12
+  - script: brew bundle --verbose --file=test/Brewfile12
 - job: macOS_Brewfile13
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile13
+  - script: brew bundle --verbose --file=test/Brewfile13
 - job: macOS_Brewfile14
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile14
+  - script: brew bundle --verbose --file=test/Brewfile14
 - job: macOS_Brewfile15
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile15
+  - script: brew bundle --verbose --file=test/Brewfile15
 - job: macOS_Brewfile16
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile16
+  - script: brew bundle --verbose --file=test/Brewfile16
 - job: macOS_Brewfile17
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile17
+  - script: brew bundle --verbose --file=test/Brewfile17
 - job: macOS_Brewfile18
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile18
+  - script: brew bundle --verbose --file=test/Brewfile18
 - job: macOS_Brewfile19
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile19
+  - script: brew bundle --verbose --file=test/Brewfile19
 - job: macOS_Brewfile20
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile20
+  - script: brew bundle --verbose --file=test/Brewfile20
 - job: macOS_Brewfile21
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile21
+  - script: brew bundle --verbose --file=test/Brewfile21
 - job: macOS_Brewfile22
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile22
+  - script: brew bundle --verbose --file=test/Brewfile22
 - job: macOS_Brewfile23
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile23
+  - script: brew bundle --verbose --file=test/Brewfile23
 - job: macOS_Brewfile24
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile24
+  - script: brew bundle --verbose --file=test/Brewfile24
 - job: macOS_Brewfile25
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile25
+  - script: brew bundle --verbose --file=test/Brewfile25
 - job: macOS_Brewfile26
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile26
+  - script: brew bundle --verbose --file=test/Brewfile26
 - job: macOS_Brewfile27
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile27
+  - script: brew bundle --verbose --file=test/Brewfile27
 - job: macOS_Brewfile28
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile28
+  - script: brew bundle --verbose --file=test/Brewfile28
 - job: macOS_Brewfile29
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile29
+  - script: brew bundle --verbose --file=test/Brewfile29
 - job: macOS_Brewfile30
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile30
+  - script: brew bundle --verbose --file=test/Brewfile30
 - job: macOS_Brewfile31
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile31
+  - script: brew bundle --verbose --file=test/Brewfile31
 - job: macOS_Brewfile32
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile32
+  - script: brew bundle --verbose --file=test/Brewfile32
 - job: macOS_Brewfile33
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile33
+  - script: brew bundle --verbose --file=test/Brewfile33
 - job: macOS_Brewfile34
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile34
+  - script: brew bundle --verbose --file=test/Brewfile34
 - job: macOS_Brewfile35
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile35
+  - script: brew bundle --verbose --file=test/Brewfile35
 - job: macOS_Brewfile36
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile36
+  - script: brew bundle --verbose --file=test/Brewfile36
 - job: macOS_Brewfile37
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile37
+  - script: brew bundle --verbose --file=test/Brewfile37
 - job: macOS_Brewfile38
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile38
+  - script: brew bundle --verbose --file=test/Brewfile38
 - job: macOS_Brewfile39
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile39
+  - script: brew bundle --verbose --file=test/Brewfile39
 - job: macOS_Brewfile40
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile40
+  - script: brew bundle --verbose --file=test/Brewfile40
 - job: macOS_Brewfile41
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile41
+  - script: brew bundle --verbose --file=test/Brewfile41
 - job: macOS_Brewfile42
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile42
+  - script: brew bundle --verbose --file=test/Brewfile42
 - job: macOS_Brewfile43
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile43
+  - script: brew bundle --verbose --file=test/Brewfile43
 - job: macOS_Brewfile44
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile44
+  - script: brew bundle --verbose --file=test/Brewfile44
 - job: macOS_Brewfile45
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile45
+  - script: brew bundle --verbose --file=test/Brewfile45
 - job: macOS_Brewfile46
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile46
+  - script: brew bundle --verbose --file=test/Brewfile46
 - job: macOS_Brewfile47
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile47
+  - script: brew bundle --verbose --file=test/Brewfile47
 - job: macOS_Brewfile48
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile48
+  - script: brew bundle --verbose --file=test/Brewfile48
 - job: macOS_Brewfile49
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile49
+  - script: brew bundle --verbose --file=test/Brewfile49
 - job: macOS_Brewfile50
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile50
+  - script: brew bundle --verbose --file=test/Brewfile50
 - job: macOS_Brewfile51
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile51
+  - script: brew bundle --verbose --file=test/Brewfile51
 - job: macOS_Brewfile52
   pool:
     vmImage: 'macOS-10.13'
   steps:
-  - script: brew bundle --verbose --file=Brewfile52
+  - script: brew bundle --verbose --file=test/Brewfile52
