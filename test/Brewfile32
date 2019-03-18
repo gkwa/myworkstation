@@ -17,8 +17,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "r"
 brew "ranger"
 brew "rbenv"
 brew "rdesktop"
 brew "re2c"
-brew "reattach-to-user-namespace"

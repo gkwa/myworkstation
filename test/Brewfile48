@@ -17,8 +17,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+cask "minikube"
 cask "mongodb"
 cask "mysql-shell"
 cask "mysqlworkbench"
 cask "neo4j"
-cask "obs"

@@ -17,8 +17,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "gnu-tar"
 brew "gnu-which"
 brew "gnupg"
 brew "gobject-introspection"
 brew "golang"
-brew "gradle"

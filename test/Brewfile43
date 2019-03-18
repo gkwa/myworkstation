@@ -17,8 +17,8 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "yarn"
 brew "z"
 cask "caskroom/versions/java8"
 cask "alfred"
 cask "amethyst"
-cask "blender"

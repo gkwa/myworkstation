@@ -262,3 +262,8 @@ jobs:
     vmImage: 'macOS-10.13'
   steps:
   - script: brew bundle --verbose --file=test/Brewfile52
+- job: macOS_Brewfile53
+  pool:
+    vmImage: 'macOS-10.13'
+  steps:
+  - script: brew bundle --verbose --file=test/Brewfile53
