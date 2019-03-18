@@ -3,7 +3,7 @@ from pprint import pprint
 
 from jinja2 import Template
 
-COUNT = 5
+COUNT = 50
 
 tpl_azure = Template("""{#- jinja2 -#}
 trigger:
