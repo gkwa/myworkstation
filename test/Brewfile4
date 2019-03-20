@@ -17,6 +17,9 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "prototool"
+brew "psgrep"
+brew "pssh"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "pyenv-virtualenvwrapper"
@@ -64,6 +67,3 @@ brew "tokyo-cabinet"
 brew "travis"
 brew "tree"
 brew "unibilium"
-brew "unixodbc"
-brew "vault", args: ["build-from-source"]
-brew "vim"
