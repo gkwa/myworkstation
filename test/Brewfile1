@@ -17,6 +17,7 @@ tap "weaveworks/tap"
 
 
 cask "java8"
+brew "BuildKit"
 brew "ack"
 brew "apr"
 brew "apr-util"
@@ -66,4 +67,3 @@ brew "docker-machine-completion"
 brew "docker-machine-driver-xhyve"
 brew "dockerize"
 brew "dos2unix"
-brew "duck"
