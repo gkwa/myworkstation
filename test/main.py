@@ -1,5 +1,4 @@
 import re
-from pprint import pprint
 
 from jinja2 import Template
 
@@ -100,6 +99,7 @@ def main():
         travis.write(tpl_travis.render(COUNT=TOTAL_SPLITS))
     with open('../azure-pipelines.yml', 'w') as azure:
         azure.write(tpl_azure.render(COUNT=TOTAL_SPLITS))
+
 
 if __name__ == "__main__":
     # execute only if run as a script
