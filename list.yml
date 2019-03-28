@@ -1,4 +1,4 @@
-brews:
+brew:
 - ack
 - apr
 - apr-util
@@ -237,7 +237,7 @@ brews:
 - yajl
 - yarn
 - z
-casks:
+cask:
 - alfred
 - amethyst
 - blender
@@ -261,7 +261,7 @@ casks:
 - kindle
 - kitematic
 - macpass
-- maxtex
+- mactex
 - minikube
 - mongodb
 - mysql-shell
@@ -285,12 +285,12 @@ casks:
 - vlc
 - wireshark
 - xquartz
-mass:
+mas:
 - Microsoft Remote Desktop: null
   id: 1295203466
 - Xcode: null
   id: 497799835
-taps:
+tap:
 - aws/tap
 - azure/draft
 - caskroom/cask
