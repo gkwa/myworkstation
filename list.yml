@@ -35,10 +35,13 @@ brews:
 - consul
 - consul-template
 - coreutils
+- corkscrew
 - csvkit
 - ctags
 - cunit
 - curl
+- dateutils
+- delta
 - dialog
 - dnsmasq
 - docker-completion
@@ -119,6 +122,7 @@ brews:
 - lame
 - ledger
 - logrotate
+- logstash
 - lsof
 - lua
 - luajit
@@ -127,7 +131,9 @@ brews:
 - make
 - makedepend
 - maven
+- metricbeat
 - mitmproxy
+- mmv
 - mobile-shell
 - mono
 - mosh
@@ -135,6 +141,7 @@ brews:
 - msmtp
 - mtr
 - mutt
+- mvnvm
 - n
 - ncdu
 - neovim
@@ -207,6 +214,7 @@ brews:
 - tokyo-cabinet
 - travis
 - tree
+- uni2ascii
 - unibilium
 - unixodbc
 - vault
