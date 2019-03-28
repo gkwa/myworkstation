@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import argparse
+import logging
 import sys
 from itertools import zip_longest
 
@@ -9,6 +11,18 @@ import yaml
 if sys.version_info[0] < 3:
     raise Exception("Must be using Python 3")
 
+parser = argparse.ArgumentParser()
+
+parser.add_argument(
+    "--debug",
+    action='store_true',
+    default=False,
+    help="debug")
+
+args = parser.parse_args()
+
+logging.basicConfig(format="%(asctime)s: %(message)s",
+                    level=logging.DEBUG, datefmt="%H:%M:%S")
 
 MAX_PACKAGES_PER_GROUP = 60
 
@@ -24,8 +38,9 @@ with open('list.yml', 'w') as outfile:
 
 
 tpl_str = '''{#- jinja2 -#}
-{%- set NEWLINE='\n' -%}
+{% set NEWLINE='\n' -%}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
+---
 
 {% if taps -%}
 - homebrew_tap:
@@ -42,8 +57,9 @@ tpl_str = '''{#- jinja2 -#}
 {{NEWLINE}}
 
 {%- if brews -%}
-- homebrew_brew:
+- homebrew:
   name: {% for brew in brews %}{{ brew }}{{ ", " if not loop.last }}{%- endfor %}
+  upgrade_all: yes
 {% endif -%}
 '''
 
@@ -76,6 +92,6 @@ for idx, lst in enumerate(combined):
         dct = {
             'brews': combined[idx][0],
             'casks': combined[idx][1],
-            'taps': dct['taps']}
+            'taps': dct['taps'],}
         tplr = jinja2.Template(tpl_str).render(dct)
         macos.write(tplr)
