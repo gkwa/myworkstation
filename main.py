@@ -5,8 +5,10 @@ import logging
 import sys
 from itertools import zip_longest
 
+import sys
+import pprint
 import jinja2
-import yaml
+import toml
 
 if sys.version_info[0] < 3:
     raise Exception("Must be using Python 3")
@@ -26,15 +28,18 @@ logging.basicConfig(format="%(asctime)s: %(message)s",
 
 MAX_PACKAGES_PER_GROUP = 60
 
-dct = yaml.load(open('list.yml'))
+dct = toml.load('list.toml')
+pprint.pprint(dct)
+
+sys.exit(0)
 
 dct['brews'] = sorted(set(dct['brews']))
 dct['taps'] = sorted(set(dct['taps']))
 dct['casks'] = sorted(set(dct['casks']))
 dct['mass'] = dct['mass']  # FIXME
 
-with open('list.yml', 'w') as outfile:
-    yaml.dump(dct, outfile, default_flow_style=False)
+with open('list.toml', 'w') as outfile:
+    toml.dump(dct, outfile)
 
 
 tpl_str = '''{#- jinja2 -#}
@@ -63,7 +68,7 @@ tpl_str = '''{#- jinja2 -#}
 {% endif -%}
 '''
 
-with open(f'macos.yml', 'w') as macos:
+with open(f'macos.toml', 'w') as macos:
     dct = {'brews': dct['brews'], 'casks': dct['casks'], 'taps': dct['taps']}
     tplr = jinja2.Template(tpl_str).render(dct)
     macos.write(tplr)
@@ -88,10 +93,12 @@ casks = list(chunks(dct['casks'], MAX_PACKAGES_PER_GROUP // 2))
 combined = list(zip_longest(brews, casks))
 
 for idx, lst in enumerate(combined):
-    with open(f'macos{idx+1}.yml', 'w') as macos:
+    with open(f'macos{idx+1}.toml', 'w') as macos:
         dct = {
             'brews': combined[idx][0],
             'casks': combined[idx][1],
             'taps': dct['taps'],}
         tplr = jinja2.Template(tpl_str).render(dct)
         macos.write(tplr)
+
+Python finished at Thu Mar 28 12:55:34
