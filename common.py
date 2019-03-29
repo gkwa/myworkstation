@@ -1,4 +1,6 @@
 import yaml
+import tempfile
+import os
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
@@ -10,8 +12,10 @@ def load(path):
     dct = yaml.load(open(path), Loader=Loader)
     dct = clean(dct)
 
-    with open('list.yml', 'w') as outfile:
-        yaml.dump(dct, outfile, default_flow_style=False)
+    with tempfile.NamedTemporaryFile() as fp:
+        yaml.dump_all(dct, fp, default_flow_style=False, Dumper=Dumper)
+        os.rename('list.yml', 'list.yml.tmp')
+        os.rename(fp, 'list.yml')
 
     return dct
 
