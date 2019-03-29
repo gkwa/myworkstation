@@ -40,6 +40,7 @@ brew:
 - ctags
 - cunit
 - curl
+- datamash
 - dateutils
 - delta
 - dialog
@@ -64,9 +65,14 @@ brew:
 - envconsul
 - etcd
 - exa
+- exact-image
+- exim
 - faad2
+- fades
+- ffe
 - ffsend
 - findutils
+- fluxctl
 - fontconfig
 - fping
 - fswatch
@@ -226,6 +232,7 @@ brew:
 - wdiff
 - websocat
 - wget
+- whois
 - wiggle
 - wireshark
 - wsk
