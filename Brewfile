@@ -280,6 +280,7 @@ brew "tig"
 brew "timewarrior"
 brew "tmux"
 brew "tokyo-cabinet"
+brew "traefik"
 brew "travis"
 brew "tree"
 brew "uni2ascii"
@@ -308,5 +309,5 @@ brew "z"
 
 # mas
 # FIXME: this is dictionary
-# mas "[{'Microsoft Remote Desktop': None, 'id': 1295203466}, {'Xcode': None, 'id': 497799835}]"
-# mas "[{'Microsoft Remote Desktop': None, 'id': 1295203466}, {'Xcode': None, 'id': 497799835}]"
+# mas "{'Microsoft Remote Desktop': None, 'id': 1295203466}"
+# mas "{'Xcode': None, 'id': 497799835}"

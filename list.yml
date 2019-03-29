@@ -212,6 +212,7 @@ brew:
 - timewarrior
 - tmux
 - tokyo-cabinet
+- traefik
 - travis
 - tree
 - uni2ascii
