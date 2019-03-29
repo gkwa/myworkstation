@@ -39,10 +39,7 @@ TPL_STR = '''{#- jinja2 -#}
 {% endif -%}
 '''
 
-tpl_ansible = jinja2.Template(TPL_STR,
-                              trim_blocks=True,
-                              keep_trailing_newline=False,
-                              lstrip_blocks=True)
+tpl_ansible = jinja2.Template(TPL_STR)
 
 
 def write_single_file(dct):

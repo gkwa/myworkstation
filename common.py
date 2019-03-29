@@ -1,6 +1,7 @@
-import yaml
-import tempfile
 import os
+import tempfile
+
+import yaml
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
@@ -10,12 +11,6 @@ except ImportError:
 
 def load(path):
     dct = yaml.load(open(path), Loader=Loader)
-    dct = clean(dct)
-
-    with tempfile.NamedTemporaryFile() as fp:
-        yaml.dump_all(dct, fp, default_flow_style=False, Dumper=Dumper)
-        os.rename('list.yml', 'list.yml.tmp')
-        os.rename(fp, 'list.yml')
 
     return dct
 
@@ -30,6 +25,12 @@ def clean(dct):
     dct['tap'] = sorted(set(dct['tap']))
     dct['cask'] = sorted(set(dct['cask']))
     dct['mas'] = dct['mas']  # FIXME: this is dictionary
+
+    fd, path = tempfile.mkstemp()
+    f = os.fdopen(fd, 'w')
+    f.write(yaml.dump(dct))
+    f.flush()
+    os.rename(path, 'list.yml')
 
     return dct
 

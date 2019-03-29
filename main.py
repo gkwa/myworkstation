@@ -25,5 +25,6 @@ logging.basicConfig(format="%(asctime)s: %(message)s",
                     level=logging.DEBUG, datefmt="%H:%M:%S")
 
 packages = common.load('list.yml')
+packages = common.clean(packages)
 ansible.create_taskfiles(packages)
 bundle.create_brewfiles(packages)
