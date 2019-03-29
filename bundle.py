@@ -11,7 +11,6 @@ tpl_brewfile = jinja2.Template('''{#- jinja2 -#}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 
 {% if tap -%}
-# taps
 {% for t in tap -%}
 tap "{{ t }}"
 {% endfor %}
@@ -20,7 +19,6 @@ tap "{{ t }}"
 {{NEWLINE}}
 
 {%- if cask -%}
-# cask
 {% for c in cask -%}
 cask "{{ c }}"
 {% endfor %}
@@ -29,7 +27,6 @@ cask "{{ c }}"
 {{NEWLINE}}
 
 {%- if brew -%}
-# brews
 {% for b in brew -%}
 brew "{{ b }}"
 {% endfor %}
@@ -38,7 +35,6 @@ brew "{{ b }}"
 {{NEWLINE}}
 
 {%- if mas -%}
-# mas
 # FIXME: this is dictionary
 {% for m in mas -%}
 # mas "{{ m }}"
