@@ -1,31 +1,37 @@
+from itertools import zip_longest
+
 import jinja2
+
+import common
+
+MAX_PACKAGES_PER_GROUP = 60
 
 tpl_brewfile = jinja2.Template('''{#- jinja2 -#}
 {% set NEWLINE='\n' -%}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 
-{% if taps -%}
+{% if tap -%}
 # taps
-{% for tap in taps -%}
-tap "{{ tap }}"
+{% for t in tap -%}
+tap "{{ t }}"
 {% endfor %}
 {%- endif -%}
 
 {{NEWLINE}}
 
-{%- if casks -%}
+{%- if cask -%}
 # cask
-{% for cask in casks -%}
-cask "{{ cask }}"
+{% for c in cask -%}
+cask "{{ c }}"
 {% endfor %}
 {%- endif -%}
 
 {{NEWLINE}}
 
-{%- if brews -%}
+{%- if brew -%}
 # brews
-{% for brew in brews -%}
-brew "{{ brew }}"
+{% for b in brew -%}
+brew "{{ b }}"
 {% endfor %}
 {%- endif -%}
 
@@ -35,7 +41,7 @@ brew "{{ brew }}"
 # mas
 # FIXME: this is dictionary
 {% for m in mas -%}
-# mas "{{ mas }}"
+# mas "{{ m }}"
 {% endfor %}
 {%- endif -%}
 ''')
@@ -43,16 +49,33 @@ brew "{{ brew }}"
 
 def write_single_file(packages):
     rtpl = tpl_brewfile.render({
-        'taps': packages['tap'],
-        'casks': packages['cask'],
-        'brews': packages['brew'],
+        'tap': packages['tap'],
+        'cask': packages['cask'],
+        'brew': packages['brew'],
         'mas': packages['mas']}
     )
     with open('Brewfile', 'w') as brewfile:
         brewfile.write(rtpl)
 
 
+def write_split_files(packages):
+    brews = list(common.chunks(packages['brew'], MAX_PACKAGES_PER_GROUP // 2))
+    cask = list(common.chunks(packages['cask'], MAX_PACKAGES_PER_GROUP // 2))
+    # FIXME: add mas
+
+    combined = list(zip_longest(brews, cask))
+
+    for idx, lst in enumerate(combined):
+        with open(f'Brewfile{idx+1}', 'w') as macos:
+            dct = {
+                'brew': combined[idx][0],
+                'cask': combined[idx][1],
+                'tap': packages['tap'],
+                'mas': packages['mas']}
+            tplr = tpl_brewfile.render(dct)
+            macos.write(tplr)
+
+
 def create_brewfiles(packages):
     write_single_file(packages)
-    # FIXME: not written yet
-    # write_split_files(packages)
+    write_split_files(packages)

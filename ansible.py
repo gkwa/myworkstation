@@ -6,7 +6,7 @@ import common
 
 MAX_PACKAGES_PER_GROUP = 60
 
-TPL_STR = '''{#- jinja2 -#}
+TPL_STR1 = '''{#- jinja2 -#}
 {%- set NEWLINE='\n' -%}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 ---
@@ -39,7 +39,55 @@ TPL_STR = '''{#- jinja2 -#}
 {% endif -%}
 '''
 
-tpl_ansible = jinja2.Template(TPL_STR)
+TPL_STR2 = '''{#- jinja2 -#}
+{%- set NEWLINE='\n' -%}
+# Don't edit, this.  Edit list.yml and run ./main.py to generate this.
+---
+
+{% if tap %}
+{% for t in tap %}
+- name: Install tap {{t}}
+  homebrew_tap:
+    name: {{t}}
+{%- endfor %}
+
+{{NEWLINE}}
+{% endif %}
+
+{% if cask %}
+{% for c in cask %}
+- name: Install cask {{c}}
+  homebrew_cask:
+    name: {{c}}
+{%- endfor %}
+
+{{NEWLINE}}
+{% endif %}
+
+{% if brew %}
+{% for b in brew %}
+- name: Install brew {{b}}
+  homebrew:
+    name: {{b}}
+{%- endfor %}
+
+{{NEWLINE}}
+{% endif %}
+
+{% if mas %}
+# FIXME: mas is dictionary
+{% for m in mas %}
+#- name: Install mas {{m}}
+#  homebrew_mas:
+#    name: {{m}}
+{%- endfor %}
+
+{{NEWLINE}}
+{% endif %}
+'''
+
+tpl_ansible = jinja2.Template(TPL_STR1)
+tpl_ansible = jinja2.Template(TPL_STR2)
 
 
 def write_single_file(dct):
@@ -64,7 +112,8 @@ def write_split_files(dct):
             dct = {
                 'brew': combined[idx][0],
                 'cask': combined[idx][1],
-                'tap': dct['tap'], }
+                'tap': dct['tap'],
+                'mas': dct['mas']}
             tplr = tpl_ansible.render(dct)
             macos.write(tplr)
 

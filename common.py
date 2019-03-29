@@ -28,7 +28,7 @@ def clean(dct):
 
     fd, path = tempfile.mkstemp()
     f = os.fdopen(fd, 'w')
-    f.write(yaml.dump(dct))
+    f.write(yaml.dump(dct, default_flow_style=False))
     f.flush()
     os.rename(path, 'list.yml')
 
