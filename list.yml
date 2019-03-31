@@ -1,4 +1,4 @@
-brew:
+brews:
 - ack
 - apr
 - apr-util
@@ -17,7 +17,6 @@ brew:
 - bazaar
 - bazel
 - bdw-gc
-- blackbox
 - bower
 - brew-graph
 - bsdiff
@@ -34,6 +33,7 @@ brew:
 - cmake
 - consul
 - consul-template
+- convox
 - coreutils
 - corkscrew
 - csvkit
@@ -136,6 +136,7 @@ brew:
 - lynx
 - make
 - makedepend
+- mas
 - maven
 - metricbeat
 - mitmproxy
@@ -245,7 +246,7 @@ brew:
 - yajl
 - yarn
 - z
-cask:
+casks:
 - alfred
 - amethyst
 - blender
@@ -298,7 +299,7 @@ mas:
   id: 1295203466
 - Xcode: null
   id: 497799835
-tap:
+taps:
 - aws/tap
 - azure/draft
 - caskroom/cask
@@ -311,6 +312,5 @@ tap:
 - homebrew/services
 - ksonnet/tap
 - martido/brew-graph
-- mas-cli/tap
 - neovim/neovim
 - weaveworks/tap
