@@ -38,7 +38,6 @@ TPL_STR1 = """{#- jinja2 -#}
 """
 
 TPL_STR2 = """{#- jinja2 -#}
-{%- set NEWLINE='\n' -%}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 ---
 
