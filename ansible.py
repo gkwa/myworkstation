@@ -5,7 +5,6 @@ import jinja2
 from packages import PackageStore
 
 TPL_STR1 = """{#- jinja2 -#}
-{%- set NEWLINE='\n' -%}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 ---
 - hosts: localhost
