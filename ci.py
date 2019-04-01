@@ -19,14 +19,12 @@ dist: trusty
 group: edge
 os: osx
 osx_image: xcode10.2
-
 env:
 {%- for filename in splits %}
-- {{ filevar }}={{ filename }}
+- BREWFILE={{ filename }}
 {%- endfor %}
-
 script:
-- travis_retry brew bundle --file=$BREWFILE --verbose
+- travis_retry brew bundle --verbose --file=$BREWFILE
 """
 
 STR_ANSIBLE_TRAVIS = """{#- jinja2 -#}
@@ -39,14 +37,12 @@ dist: trusty
 group: edge
 os: osx
 osx_image: xcode10.2
-
 env:
 {%- for filename in splits %}
-- {{ filevar }}={{ filename }}
+- PLAYBOOK={{ filename }}
 {%- endfor %}
-
 script:
-- travis_retry ansible-playbook --verbose --verbose $ANSIBLE_FILE
+- travis_retry ansible-playbook --verbose --verbose $PLAYBOOK
 """
 
 STR_BREW_BUNDLE_AZURE = """{#- jinja2 -#}
@@ -58,10 +54,10 @@ strategy:
   matrix:
 {%- for filename in splits %}
     set_env_to_{{ filename }}:
-      BUNDLEFILE: {{ filename }}
+      BREWFILE: {{ filename }}
 {%- endfor %}
 steps:
-- script: brew bundle --verbose --file=$BUNDLEFILE
+- script: brew bundle --verbose --file=$BREWFILE
 """
 
 STR_BREW_ANSIBLE_AZURE = """{#- jinja2 -#}
@@ -73,10 +69,10 @@ strategy:
   matrix:
 {%- for filename in splits %}
     set_env_to_{{ filename }}:
-      ANSIBLE_FILE: '{{ filename }}'
+      PLAYBOOK: '{{ filename }}'
 {%- endfor %}
 steps:
-- script: ansible-playbook $ANSIBLE_FILE
+- script: ansible-playbook --verbose --verbose $PLAYBOOK
 """
 
 
@@ -96,16 +92,14 @@ def write_azure_ansible(store, ansible):
 
 def write_travis_bundle(store, bundle):
     flist = store.split_targets(bundle.config_basename)
-    out = Template(STR_BREW_BUNDLE_TRAVIS).render(
-        {'filevar': 'BREWFILE', 'splits': flist})
+    out = Template(STR_BREW_BUNDLE_TRAVIS).render({'splits': flist})
     with open(TRAVIS_FILENAME, 'w') as fh:
         fh.write(out)
 
 
 def write_travis_ansible(store, ansible):
     flist = store.split_targets(ansible.config_basename)
-    out = Template(STR_ANSIBLE_TRAVIS).render(
-        {'filevar': 'ANSIBLE_FILE', 'splits': flist})
+    out = Template(STR_ANSIBLE_TRAVIS).render({'splits': flist})
     with open(TRAVIS_FILENAME, 'w') as fh:
         fh.write(out)
 

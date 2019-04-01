@@ -40,39 +40,39 @@ TPL_STR1 = """{#- jinja2 -#}
 TPL_STR2 = """{#- jinja2 -#}
 # Don't edit, this.  Edit list.yml and run ./main.py to generate this.
 ---
-
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
 {% if mas -%}
 # FIXME: mas is dictionary
-{% for m in mas %}
+{%- for m in mas %}
 #- name: Install mas {{m}}
 #  homebrew_mas:
 #    name: {{m}}
 {%- endfor %}
 {%- endif %}
-
-{% if taps %}
-{% for tap in taps %}
-- name: Install tap {{tap}}
-  homebrew_tap:
-    name: {{tap}}
-{%- endfor %}
-{% endif %}
-
-{% if casks %}
-{% for cask in casks %}
-- name: Install cask {{cask}}
-  homebrew_cask:
-    name: {{cask}}
-{%- endfor %}
-{% endif %}
-
-{% if brews %}
-{% for brew in brews %}
-- name: Install brew {{brew}}
-  homebrew:
-    name: {{brew}}
-{%- endfor %}
-{% endif %}
+  {%- if taps -%}
+  {% for tap in taps %}
+  - name: Install tap {{tap}}
+    homebrew_tap:
+      name: {{tap}}
+  {%- endfor %}
+  {%- endif -%}
+  {%- if casks -%}
+  {% for cask in casks %}
+  - name: Install cask {{cask}}
+    homebrew_cask:
+      name: {{cask}}
+  {%- endfor %}
+  {%- endif -%}
+  {%- if brews -%}
+  {% for brew in brews %}
+  - name: Install brew {{brew}}
+    homebrew:
+      name: {{brew}}
+  {%- endfor %}
+  {%- endif -%}
 """
 
 
@@ -84,7 +84,7 @@ class Ansible:
     template: jinja2.Template = None
 
     def __post_init__(self):
-        self.config_basename = "macos{}.yml"
+        self.config_basename = "playbook_macos{}.yml"
         self.template = jinja2.Template(TPL_STR1)
 
     def write_single_file(self):
