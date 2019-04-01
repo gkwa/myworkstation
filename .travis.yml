@@ -20,4 +20,4 @@ env:
 - ANSIBLE_FILE=macos9.yml
 
 script:
-- travis_retry ansible-playbook $ANSIBLE_FILE
+- travis_retry ansible-playbook --verbose --verbose $ANSIBLE_FILE

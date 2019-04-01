@@ -46,7 +46,7 @@ env:
 {%- endfor %}
 
 script:
-- travis_retry ansible-playbook $ANSIBLE_FILE
+- travis_retry ansible-playbook --verbose --verbose $ANSIBLE_FILE
 """
 
 STR_BREW_BUNDLE_AZURE = """{#- jinja2 -#}
