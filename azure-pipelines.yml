@@ -1,0 +1,26 @@
+trigger:
+- master
+pool:
+  vmImage: macOS-10.14
+strategy:
+  matrix:
+    set_env_to_Brewfile1:
+      BUNDLEFILE: Brewfile1
+    set_env_to_Brewfile2:
+      BUNDLEFILE: Brewfile2
+    set_env_to_Brewfile3:
+      BUNDLEFILE: Brewfile3
+    set_env_to_Brewfile4:
+      BUNDLEFILE: Brewfile4
+    set_env_to_Brewfile5:
+      BUNDLEFILE: Brewfile5
+    set_env_to_Brewfile6:
+      BUNDLEFILE: Brewfile6
+    set_env_to_Brewfile7:
+      BUNDLEFILE: Brewfile7
+    set_env_to_Brewfile8:
+      BUNDLEFILE: Brewfile8
+    set_env_to_Brewfile9:
+      BUNDLEFILE: Brewfile9
+steps:
+- script: brew bundle --verbose --file=$BUNDLEFILE

@@ -1,0 +1,22 @@
+# Don't edit, this.  Edit list.yml and run ./main.py to generate this.
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+# FIXME: dictionary
+#   - name: Install mas's
+#     homebrew_mas:
+#       name: {'Microsoft Remote Desktop': None, 'id': 1295203466},{'Xcode': None, 'id': 497799835}
+  - name: Install tap(s)
+    homebrew_tap:
+      name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
+      state: present
+  - name: Install casks
+    homebrew_cask:
+      name: caskroom/versions/java8,alfred,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker,dotnet-sdk,drawio,dropbox,eclipse-ide,firefox,gitter,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase,kindle,kitematic,macpass,mactex,minikube,mongodb,mysql-shell,mysqlworkbench,neo4j,obs,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
+      state: present
+  - name: Install brews
+    homebrew:
+      name: ack,apr,apr-util,aspell,augeas,autoconf,automake,autossh,aws-cfn-tools,aws-elasticache,aws-sam-cli,awscli,bash,bash-completion@2,bats,bazaar,bazel,bdw-gc,bower,brew-graph,bsdiff,buildkit,c-ares,cairomm,cassandra,certbot,cfssl,chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils,corkscrew,csvkit,ctags,cunit,curl,datamash,dateutils,delta,dialog,dnsmasq,docker-completion,docker-compose,docker-compose-completion,docker-machine,docker-machine-completion,docker-machine-driver-xhyve,dockerize,dos2unix,duck,dvm,ec2-ami-tools,editorconfig,elasticsearch,elinks,emacs,enscript,entr,envconsul,etcd,exa,exact-image,exim,faad2,fades,ffe,ffsend,findutils,fluxctl,fontconfig,fping,fswatch,fzf,gawk,gdk-pixbuf,geckodriver,geoip,ghc,gist,git,git-extras,git-fixup,git-lfs,git-when-merged,gitversion,glooctl,gnu-getopt,gnu-indent,gnu-sed,gnu-tar,gnu-which,gnupg,gobject-introspection,golang,gradle,graphviz,grep,groovy,gsl,guile,hadolint,helmfile,highlight,htop-osx,httpie,hub,hugo,icu4c,ilmbase,imagemagick,intltool,iperf3,irssi,istioctl,jid,jpeg,jq,jsonpp,kqwait,kubernetes-cli,kubernetes-helm,lame,ledger,logrotate,logstash,lsof,lua,luajit,luarocks,lynx,make,makedepend,mas,maven,metricbeat,mitmproxy,mmv,mobile-shell,mono,mosh,msgpack,msmtp,mtr,mutt,mvnvm,n,ncdu,neovim,nghttp2,nginx,nmap,node,nvm,oniguruma,opam,openexr,openvpn,p7zip,packer,pango,pangomm,parallel,patchutils,pidof,pinentry,pixman,protobuf,prototool,psgrep,pssh,pyenv,pyenv-virtualenv,pyenv-virtualenvwrapper,python,python3,qemu,r,ranger,rbenv,rdesktop,re2c,reattach-to-user-namespace,recode,redo,restic,ripgrep,rpm2cpio,rsync,ruby-build,rust,s-lang,selenium-server-standalone,shfmt,socat,spdylay,speedtest-cli,sphinx-doc,squid,ssh-copy-id,sshuttle,stow,subversion,terminal-notifier,terraform,terraforming,tesseract,texi2html,texinfo,the_platinum_searcher,the_silver_searcher,tidy-html5,tig,timewarrior,tmux,tokyo-cabinet,traefik,travis,tree,uni2ascii,unibilium,unixodbc,vault,vifm,vim,watch,watchman,wdiff,websocat,wget,whois,wiggle,wireshark,wsk,x264,xhyve,xml-coreutils,xmlstarlet,xvid,xz,yajl,yarn,z
+      state: present
