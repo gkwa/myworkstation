@@ -16,4 +16,5 @@
   will be removed because `yaml.load` respsects the comment and
   doesn't load it, but then when you write the yaml back to file then
   its removed.
- * is this an option: https://stackoverflow.com/a/27103244/1495086
+
+  Is this an option: https://stackoverflow.com/a/27103244/1495086
