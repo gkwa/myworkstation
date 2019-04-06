@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: nsd,nvm,oniguruma,opam,openexr,openvpn,p7zip,packer,pango,pangomm
+      name: fswatch,fx,fzf,gawk,gdk-pixbuf
       state: present

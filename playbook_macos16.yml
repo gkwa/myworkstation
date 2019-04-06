@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: maven,metricbeat,mitmproxy,mmv,mobile-shell,mono,mosh,msgpack,msmtp,mtr
+      name: exim,faad2,fades,ffe,ffsend
       state: present

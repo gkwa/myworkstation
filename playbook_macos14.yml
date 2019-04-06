@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: jpeg,jq,jsonpp,kqwait,kubernetes-cli,kubernetes-helm,lame,lazygit,ledger,logrotate
+      name: editorconfig,elasticsearch,elinks,emacs,enscript
       state: present

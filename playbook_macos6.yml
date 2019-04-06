@@ -12,7 +12,11 @@
     homebrew_tap:
       name: argoproj/tap,aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
+  - name: Install casks
+    homebrew_cask:
+      name: caskroom/versions/java8,minishift,mongodb,mysql-shell,mysqlworkbench,neo4j
+      state: present
   - name: Install brews
     homebrew:
-      name: dialog,direnv,django-completion,dnsmasq,docker-completion,docker-compose,docker-compose-completion,docker-machine,docker-machine-completion,docker-machine-driver-xhyve
+      name: buildkit,c-ares,cairomm,cassandra,certbot
       state: present

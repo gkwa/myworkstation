@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: parallel,patchutils,pidof,pinentry,pixman,pre-commit,protobuf,prototool,psgrep,pssh
+      name: geckodriver,geoip,ghc,gist,git
       state: present

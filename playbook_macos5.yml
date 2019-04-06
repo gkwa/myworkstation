@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,tunnelblick,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
+      name: caskroom/versions/java8,kindle,kitematic,macpass,mactex,minikube
       state: present
   - name: Install brews
     homebrew:
-      name: corkscrew,cryfs,csvkit,ctags,cunit,curl,datamash,dateutils,delta,dhall-json
+      name: binaryen,bind,bower,brew-graph,bsdiff
       state: present

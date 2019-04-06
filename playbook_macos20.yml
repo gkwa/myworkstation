@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: pyenv,pyenv-virtualenv,pyenv-virtualenvwrapper,python,python3,qemu,r,ranger,rbenv,rdesktop
+      name: git-extras,git-fixup,git-lfs,git-when-merged,gitversion
       state: present

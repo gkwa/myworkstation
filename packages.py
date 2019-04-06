@@ -10,7 +10,7 @@ try:
 except ImportError:
     from yaml import Loader, load, dump
 
-MAX_PACKAGES_PER_GROUP = 20
+MAX_PACKAGES_PER_GROUP = 10
 
 
 @dataclass

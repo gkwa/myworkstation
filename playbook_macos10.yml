@@ -12,7 +12,11 @@
     homebrew_tap:
       name: argoproj/tap,aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
+  - name: Install casks
+    homebrew_cask:
+      name: caskroom/versions/java8,vlc,wireshark,xquartz
+      state: present
   - name: Install brews
     homebrew:
-      name: geckodriver,geoip,ghc,gist,git,git-extras,git-fixup,git-lfs,git-when-merged,gitversion
+      name: curl,datamash,dateutils,delta,dhall-json
       state: present

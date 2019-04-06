@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,keybase,kindle,kitematic,macpass,mactex,minikube,mongodb,mysql-shell,mysqlworkbench,neo4j
+      name: caskroom/versions/java8,drawio,dropbox,eclipse-ide,firefox,gitter
       state: present
   - name: Install brews
     homebrew:
-      name: binaryen,bind,bower,brew-graph,bsdiff,buildkit,c-ares,cairomm,cassandra,certbot
+      name: aws-cfn-tools,aws-elasticache,aws-sam-cli,awscli,bash
       state: present

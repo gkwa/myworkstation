@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: wiggle,wireshark,wsk,x264,xhyve,xml-coreutils,xmlstarlet,xvid,xz,yajl
+      name: intltool,iperf3,irssi,istioctl,jid
       state: present

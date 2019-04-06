@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: mutt,mvnvm,mysql,n,ncdu,neovim,nghttp2,nginx,nmap,node
+      name: findutils,fluxctl,fn,fontconfig,fping
       state: present

@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: logstash,lsof,lua,luajit,luarocks,lxc,lynx,make,makedepend,mas
+      name: entr,envconsul,etcd,exa,exact-image
       state: present

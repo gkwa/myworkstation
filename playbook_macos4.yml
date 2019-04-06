@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,obs,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver
+      name: caskroom/versions/java8,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase
       state: present
   - name: Install brews
     homebrew:
-      name: cfssl,chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils
+      name: bash-completion@2,bats,bazaar,bazel,bdw-gc
       state: present

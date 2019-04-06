@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: re2c,reattach-to-user-namespace,recode,redo,restic,ripgrep,rpm2cpio,rsync,ruby-build,rust
+      name: glooctl,gnu-getopt,gnu-indent,gnu-sed,gnu-tar
       state: present

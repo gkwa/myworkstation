@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: graphviz,grep,groovy,gsl,guile,hadolint,helmfile,highlight,htop-osx,httpie
+      name: docker-compose,docker-compose-completion,docker-machine,docker-machine-completion,docker-machine-driver-xhyve
       state: present

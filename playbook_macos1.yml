@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,alfred,minishift,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker
+      name: caskroom/versions/java8,alfred,amethyst,blender,caskroom/versions/java8,charles
       state: present
   - name: Install brews
     homebrew:
-      name: ack,apr,apr-util,argoproj/tap/argocd,asciinema,aspell,augeas,autoconf,automake,autossh
+      name: ack,apr,apr-util,argoproj/tap/argocd,asciinema
       state: present

@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: tidy-html5,tig,timewarrior,tmux,tokyo-cabinet,traefik,travis,tree,uni2ascii,unibilium
+      name: hadolint,helmfile,highlight,htop-osx,httpie
       state: present

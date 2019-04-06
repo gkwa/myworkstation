@@ -14,7 +14,7 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,alfred,minishift,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker,dotnet-sdk,drawio,dropbox,eclipse-ide,firefox,gitter,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase,kindle,kitematic,macpass,mactex,minikube,mongodb,mysql-shell,mysqlworkbench,neo4j,obs,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
+      name: caskroom/versions/java8,alfred,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker,dotnet-sdk,drawio,dropbox,eclipse-ide,firefox,gitter,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase,kindle,kitematic,macpass,mactex,minikube,minishift,mongodb,mysql-shell,mysqlworkbench,neo4j,obs,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
       state: present
   - name: Install brews
     homebrew:

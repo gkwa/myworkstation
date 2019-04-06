@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: hub,hugo,icu4c,ilmbase,imagemagick,intltool,iperf3,irssi,istioctl,jid
+      name: dockerize,dos2unix,duck,dvm,ec2-ami-tools
       state: present

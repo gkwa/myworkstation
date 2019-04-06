@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: s-lang,selenium-server-standalone,shfmt,socat,spdylay,speedtest-cli,sphinx-doc,squid,ssh-copy-id,sshuttle
+      name: gnu-which,gnupg,gobject-introspection,golang,gradle
       state: present
