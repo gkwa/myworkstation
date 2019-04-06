@@ -10,13 +10,13 @@
 #       name: {'Microsoft Remote Desktop': None, 'id': 1295203466},{'Xcode': None, 'id': 497799835}
   - name: Install tap(s)
     homebrew_tap:
-      name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
+      name: argoproj/tap,aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick
+      name: caskroom/versions/java8,obs,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver
       state: present
   - name: Install brews
     homebrew:
-      name: chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils,corkscrew
+      name: cfssl,chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils
       state: present

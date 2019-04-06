@@ -2,6 +2,7 @@ brews:
 - ack
 - apr
 - apr-util
+- argoproj/tap/argocd
 - asciinema
 - aspell
 - augeas
@@ -286,6 +287,7 @@ casks:
 - macpass
 - mactex
 - minikube
+- minishift
 - mongodb
 - mysql-shell
 - mysqlworkbench
@@ -314,6 +316,7 @@ mas:
 - Xcode: null
   id: 497799835
 taps:
+- argoproj/tap
 - aws/tap
 - azure/draft
 - caskroom/cask

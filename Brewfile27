@@ -3,6 +3,7 @@
 # FIXME: this is dictionary
 # mas "{'Microsoft Remote Desktop': None, 'id': 1295203466}"
 # mas "{'Xcode': None, 'id': 497799835}"
+tap "argoproj/tap"
 tap "aws/tap"
 tap "azure/draft"
 tap "caskroom/cask"
@@ -18,4 +19,5 @@ tap "ksonnet/tap"
 tap "martido/brew-graph"
 tap "neovim/neovim"
 tap "weaveworks/tap"
+brew "yarn"
 brew "z"
