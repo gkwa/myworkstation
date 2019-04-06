@@ -17,4 +17,5 @@
   doesn't load it, but then when you write the yaml back to file then
   its removed.
 
-  Is this an option: https://stackoverflow.com/a/27103244/1495086
+  Will ruamel.yaml from https://stackoverflow.com/a/27103244/1495086
+  get me out of jail free on this one?

@@ -2,6 +2,7 @@ brews:
 - ack
 - apr
 - apr-util
+- asciinema
 - aspell
 - augeas
 - autoconf
@@ -17,6 +18,8 @@ brews:
 - bazaar
 - bazel
 - bdw-gc
+- binaryen
+- bind
 - bower
 - brew-graph
 - bsdiff
@@ -36,6 +39,7 @@ brews:
 - convox
 - coreutils
 - corkscrew
+- cryfs
 - csvkit
 - ctags
 - cunit
@@ -43,7 +47,10 @@ brews:
 - datamash
 - dateutils
 - delta
+- dhall-json
 - dialog
+- direnv
+- django-completion
 - dnsmasq
 - docker-completion
 - docker-compose
@@ -73,9 +80,11 @@ brews:
 - ffsend
 - findutils
 - fluxctl
+- fn
 - fontconfig
 - fping
 - fswatch
+- fx
 - fzf
 - gawk
 - gdk-pixbuf
@@ -126,6 +135,7 @@ brews:
 - kubernetes-cli
 - kubernetes-helm
 - lame
+- lazygit
 - ledger
 - logrotate
 - logstash
@@ -133,6 +143,7 @@ brews:
 - lua
 - luajit
 - luarocks
+- lxc
 - lynx
 - make
 - makedepend
@@ -149,6 +160,7 @@ brews:
 - mtr
 - mutt
 - mvnvm
+- mysql
 - n
 - ncdu
 - neovim
@@ -156,6 +168,7 @@ brews:
 - nginx
 - nmap
 - node
+- nsd
 - nvm
 - oniguruma
 - opam
@@ -170,6 +183,7 @@ brews:
 - pidof
 - pinentry
 - pixman
+- pre-commit
 - protobuf
 - prototool
 - psgrep
@@ -310,6 +324,7 @@ taps:
 - homebrew/cask
 - homebrew/core
 - homebrew/services
+- jesseduffield/lazygit
 - ksonnet/tap
 - martido/brew-graph
 - neovim/neovim
