@@ -1,0 +1,21 @@
+# Don't edit, this.  Edit list.yml and run ./main.py to generate this.
+
+language: ruby
+cache: bundler
+sudo: required
+dist: trusty
+group: edge
+os: osx
+osx_image: xcode10.2
+env:
+- PLAYBOOK=playbook_macos1.yml
+- PLAYBOOK=playbook_macos2.yml
+- PLAYBOOK=playbook_macos3.yml
+- PLAYBOOK=playbook_macos4.yml
+- PLAYBOOK=playbook_macos5.yml
+- PLAYBOOK=playbook_macos6.yml
+- PLAYBOOK=playbook_macos7.yml
+- PLAYBOOK=playbook_macos8.yml
+- PLAYBOOK=playbook_macos9.yml
+script:
+- travis_retry ansible-playbook --verbose --verbose $PLAYBOOK

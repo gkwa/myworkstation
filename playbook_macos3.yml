@@ -1,0 +1,18 @@
+# Don't edit, this.  Edit list.yml and run ./main.py to generate this.
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+# FIXME: dictionary
+#   - name: Install mas's
+#     homebrew_mas:
+#       name: {'Microsoft Remote Desktop': None, 'id': 1295203466},{'Xcode': None, 'id': 497799835}
+  - name: Install tap(s)
+    homebrew_tap:
+      name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
+      state: present
+  - name: Install brews
+    homebrew:
+      name: dos2unix,duck,dvm,ec2-ami-tools,editorconfig,elasticsearch,elinks,emacs,enscript,entr,envconsul,etcd,exa,exact-image,exim,faad2,fades,ffe,ffsend,findutils,fluxctl,fn,fontconfig,fping,fswatch,fx,fzf,gawk,gdk-pixbuf,geckodriver
+      state: present
