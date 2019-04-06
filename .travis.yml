@@ -17,5 +17,23 @@ env:
 - PLAYBOOK=playbook_macos7.yml
 - PLAYBOOK=playbook_macos8.yml
 - PLAYBOOK=playbook_macos9.yml
+- PLAYBOOK=playbook_macos10.yml
+- PLAYBOOK=playbook_macos11.yml
+- PLAYBOOK=playbook_macos12.yml
+- PLAYBOOK=playbook_macos13.yml
+- PLAYBOOK=playbook_macos14.yml
+- PLAYBOOK=playbook_macos15.yml
+- PLAYBOOK=playbook_macos16.yml
+- PLAYBOOK=playbook_macos17.yml
+- PLAYBOOK=playbook_macos18.yml
+- PLAYBOOK=playbook_macos19.yml
+- PLAYBOOK=playbook_macos20.yml
+- PLAYBOOK=playbook_macos21.yml
+- PLAYBOOK=playbook_macos22.yml
+- PLAYBOOK=playbook_macos23.yml
+- PLAYBOOK=playbook_macos24.yml
+- PLAYBOOK=playbook_macos25.yml
+- PLAYBOOK=playbook_macos26.yml
+- PLAYBOOK=playbook_macos27.yml
 script:
 - travis_retry ansible-playbook --verbose --verbose $PLAYBOOK

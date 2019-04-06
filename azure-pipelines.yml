@@ -22,5 +22,41 @@ strategy:
       BREWFILE: Brewfile8
     set_env_to_Brewfile9:
       BREWFILE: Brewfile9
+    set_env_to_Brewfile10:
+      BREWFILE: Brewfile10
+    set_env_to_Brewfile11:
+      BREWFILE: Brewfile11
+    set_env_to_Brewfile12:
+      BREWFILE: Brewfile12
+    set_env_to_Brewfile13:
+      BREWFILE: Brewfile13
+    set_env_to_Brewfile14:
+      BREWFILE: Brewfile14
+    set_env_to_Brewfile15:
+      BREWFILE: Brewfile15
+    set_env_to_Brewfile16:
+      BREWFILE: Brewfile16
+    set_env_to_Brewfile17:
+      BREWFILE: Brewfile17
+    set_env_to_Brewfile18:
+      BREWFILE: Brewfile18
+    set_env_to_Brewfile19:
+      BREWFILE: Brewfile19
+    set_env_to_Brewfile20:
+      BREWFILE: Brewfile20
+    set_env_to_Brewfile21:
+      BREWFILE: Brewfile21
+    set_env_to_Brewfile22:
+      BREWFILE: Brewfile22
+    set_env_to_Brewfile23:
+      BREWFILE: Brewfile23
+    set_env_to_Brewfile24:
+      BREWFILE: Brewfile24
+    set_env_to_Brewfile25:
+      BREWFILE: Brewfile25
+    set_env_to_Brewfile26:
+      BREWFILE: Brewfile26
+    set_env_to_Brewfile27:
+      BREWFILE: Brewfile27
 steps:
 - script: brew bundle --verbose --file=$BREWFILE

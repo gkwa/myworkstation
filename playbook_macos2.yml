@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
+      name: caskroom/versions/java8,drawio,dropbox,eclipse-ide,firefox,gitter,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase
       state: present
   - name: Install brews
     homebrew:
-      name: chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils,corkscrew,cryfs,csvkit,ctags,cunit,curl,datamash,dateutils,delta,dhall-json,dialog,direnv,django-completion,dnsmasq,docker-completion,docker-compose,docker-compose-completion,docker-machine,docker-machine-completion,docker-machine-driver-xhyve,dockerize
+      name: aws-elasticache,aws-sam-cli,awscli,bash,bash-completion@2,bats,bazaar,bazel,bdw-gc,binaryen
       state: present

@@ -14,9 +14,9 @@
       state: present
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,alfred,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker,dotnet-sdk,drawio,dropbox,eclipse-ide,firefox,gitter,google-chrome,google-cloud-sdk,hammerspoon,iterm2,keybase,kindle,kitematic,macpass,mactex,minikube,mongodb,mysql-shell,mysqlworkbench,neo4j,obs
+      name: caskroom/versions/java8,alfred,amethyst,blender,caskroom/versions/java8,charles,chromedriver,cyberduck,disk-inventory-x,docker,dotnet-sdk
       state: present
   - name: Install brews
     homebrew:
-      name: ack,apr,apr-util,asciinema,aspell,augeas,autoconf,automake,autossh,aws-cfn-tools,aws-elasticache,aws-sam-cli,awscli,bash,bash-completion@2,bats,bazaar,bazel,bdw-gc,binaryen,bind,bower,brew-graph,bsdiff,buildkit,c-ares,cairomm,cassandra,certbot,cfssl
+      name: ack,apr,apr-util,asciinema,aspell,augeas,autoconf,automake,autossh,aws-cfn-tools
       state: present

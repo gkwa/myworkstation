@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: selenium-server-standalone,shfmt,socat,spdylay,speedtest-cli,sphinx-doc,squid,ssh-copy-id,sshuttle,stow,subversion,terminal-notifier,terraform,terraforming,tesseract,texi2html,texinfo,the_platinum_searcher,the_silver_searcher,tidy-html5,tig,timewarrior,tmux,tokyo-cabinet,traefik,travis,tree,uni2ascii,unibilium,unixodbc
+      name: envconsul,etcd,exa,exact-image,exim,faad2,fades,ffe,ffsend,findutils
       state: present

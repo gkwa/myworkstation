@@ -12,11 +12,7 @@
     homebrew_tap:
       name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
-  - name: Install casks
-    homebrew_cask:
-      name: caskroom/versions/java8,kindle,kitematic,macpass,mactex,minikube,mongodb,mysql-shell,mysqlworkbench,neo4j,obs
-      state: present
   - name: Install brews
     homebrew:
-      name: bind,bower,brew-graph,bsdiff,buildkit,c-ares,cairomm,cassandra,certbot,cfssl
+      name: nvm,oniguruma,opam,openexr,openvpn,p7zip,packer,pango,pangomm,parallel
       state: present

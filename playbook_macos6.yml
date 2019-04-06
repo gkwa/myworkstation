@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: metricbeat,mitmproxy,mmv,mobile-shell,mono,mosh,msgpack,msmtp,mtr,mutt,mvnvm,mysql,n,ncdu,neovim,nghttp2,nginx,nmap,node,nsd,nvm,oniguruma,opam,openexr,openvpn,p7zip,packer,pango,pangomm,parallel
+      name: direnv,django-completion,dnsmasq,docker-completion,docker-compose,docker-compose-completion,docker-machine,docker-machine-completion,docker-machine-driver-xhyve,dockerize
       state: present

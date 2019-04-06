@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: vault,vifm,vim,watch,watchman,wdiff,websocat,wget,whois,wiggle,wireshark,wsk,x264,xhyve,xml-coreutils,xmlstarlet,xvid,xz,yajl,yarn,z
+      name: fluxctl,fn,fontconfig,fping,fswatch,fx,fzf,gawk,gdk-pixbuf,geckodriver
       state: present

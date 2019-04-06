@@ -12,7 +12,11 @@
     homebrew_tap:
       name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
+  - name: Install casks
+    homebrew_cask:
+      name: caskroom/versions/java8,opera,paste,postman,powershell,screenflick,skype,slack,spectacle,the-unarchiver,tunnelblick
+      state: present
   - name: Install brews
     homebrew:
-      name: geoip,ghc,gist,git,git-extras,git-fixup,git-lfs,git-when-merged,gitversion,glooctl,gnu-getopt,gnu-indent,gnu-sed,gnu-tar,gnu-which,gnupg,gobject-introspection,golang,gradle,graphviz,grep,groovy,gsl,guile,hadolint,helmfile,highlight,htop-osx,httpie,hub
+      name: chrome-cli,clasp,cliclick,cloud-watch,cmake,consul,consul-template,convox,coreutils,corkscrew
       state: present

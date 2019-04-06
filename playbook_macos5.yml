@@ -12,7 +12,11 @@
     homebrew_tap:
       name: aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
+  - name: Install casks
+    homebrew_cask:
+      name: caskroom/versions/java8,vagrant,virtualbox,virtualbox-extension-pack,visual-studio-code,vlc,wireshark,xquartz
+      state: present
   - name: Install brews
     homebrew:
-      name: hugo,icu4c,ilmbase,imagemagick,intltool,iperf3,irssi,istioctl,jid,jpeg,jq,jsonpp,kqwait,kubernetes-cli,kubernetes-helm,lame,lazygit,ledger,logrotate,logstash,lsof,lua,luajit,luarocks,lxc,lynx,make,makedepend,mas,maven
+      name: cryfs,csvkit,ctags,cunit,curl,datamash,dateutils,delta,dhall-json,dialog
       state: present

@@ -14,5 +14,5 @@
       state: present
   - name: Install brews
     homebrew:
-      name: patchutils,pidof,pinentry,pixman,pre-commit,protobuf,prototool,psgrep,pssh,pyenv,pyenv-virtualenv,pyenv-virtualenvwrapper,python,python3,qemu,r,ranger,rbenv,rdesktop,re2c,reattach-to-user-namespace,recode,redo,restic,ripgrep,rpm2cpio,rsync,ruby-build,rust,s-lang
+      name: dos2unix,duck,dvm,ec2-ami-tools,editorconfig,elasticsearch,elinks,emacs,enscript,entr
       state: present
