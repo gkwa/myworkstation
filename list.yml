@@ -132,6 +132,7 @@ brews:
 - jpeg
 - jq
 - jsonpp
+- kibana
 - kqwait
 - kubernetes-cli
 - kubernetes-helm

@@ -12,7 +12,11 @@
     homebrew_tap:
       name: argoproj/tap,aws/tap,azure/draft,caskroom/cask,domt4/autoupdate,facebook/fb,habitat-sh/habitat,homebrew/bundle,homebrew/cask,homebrew/core,homebrew/services,jesseduffield/lazygit,ksonnet/tap,martido/brew-graph,neovim/neovim,weaveworks/tap
       state: present
+  - name: Install java8 cask
+    homebrew_cask:
+      name: caskroom/versions/java8
+      state: present
   - name: Install brews
     homebrew:
-      name: neovim,nghttp2,nginx,nmap,node
+      name: ncdu,neovim,nghttp2,nginx,nmap
       state: present

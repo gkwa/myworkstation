@@ -23,10 +23,14 @@ TPL_STR1 = """{#- jinja2 -#}
       name: {% for tap in taps %}{{ tap }}{{ "," if not loop.last }}{%- endfor %}
       state: present
 {%- endif %}
+  - name: Install java8 cask
+    homebrew_cask:
+      name: caskroom/versions/java8
+      state: present
 {%- if casks %}
   - name: Install casks
     homebrew_cask:
-      name: caskroom/versions/java8,{% for cask in casks %}{{ cask }}{{ "," if not loop.last }}{%- endfor %}
+      name: {% for cask in casks %}{{ cask }}{{ "," if not loop.last }}{%- endfor %}
       state: present
 {%- endif -%}
 {% if brews %}
