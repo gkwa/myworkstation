@@ -3,9 +3,6 @@
 import argparse
 import logging
 
-import ansible
-import bundle
-import ci
 import packages
 
 parser = argparse.ArgumentParser()
@@ -22,9 +19,6 @@ logging.basicConfig(format="%(asctime)s: %(message)s",
                     level=logging.DEBUG, datefmt="%H:%M:%S")
 
 
-ps = packages.PackageStore()
-ans = ansible.Ansible(store=ps)
-ans.write_all_files()
-bdl = bundle.Bundle(store=ps)
-bdl.write_all_files()
-ci.write_all_files(ps, bdl, ans)
+def main():
+    ps = packages.PackageStore()
+    ps.write_split_files(packages.ansible)
