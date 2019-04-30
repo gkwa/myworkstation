@@ -1,12 +1,15 @@
 brews:
 - ack
+- amazon-ecs-cli
 - argoproj/tap/argocd
 - asciidoctor
 - asciinema
 - aspell
 - augeas
 - autoconf
+- autojump
 - automake
+- autopep8
 - autossh
 - aws-cfn-tools
 - aws-elasticache
@@ -48,8 +51,10 @@ brews:
 - datamash
 - dateutils
 - delta
+- dep
 - dhall-json
 - dialog
+- dict
 - direnv
 - django-completion
 - dnsmasq
@@ -62,6 +67,7 @@ brews:
 - dockerize
 - dos2unix
 - duck
+- duti
 - dvm
 - ec2-ami-tools
 - editorconfig
@@ -100,6 +106,7 @@ brews:
 - git-lfs
 - git-when-merged
 - gitversion
+- glide
 - glooctl
 - gnu-getopt
 - gnu-indent
@@ -108,7 +115,9 @@ brews:
 - gnu-which
 - gnupg
 - gobject-introspection
+- gobuffalo/tap/buffalo
 - golang
+- goreleaser
 - gradle
 - graphviz
 - grep
@@ -172,10 +181,13 @@ brews:
 - n
 - ncdu
 - neovim
+- nethogs
 - nghttp2
 - nginx
+- nload
 - nmap
 - node
+- node@10
 - nomad
 - nsd
 - nvm
@@ -195,6 +207,7 @@ brews:
 - pixman
 - postgresql
 - pre-commit
+- prometheus
 - protobuf
 - prototool
 - psgrep
@@ -210,10 +223,10 @@ brews:
 - ranger
 - rbenv
 - rdesktop
-- re2c
 - reattach-to-user-namespace
 - recode
 - redo
+- rep2c
 - restic
 - ripgrep
 - rpm2cpio
@@ -227,9 +240,11 @@ brews:
 - spdylay
 - speedtest-cli
 - sphinx-doc
+- spruce
 - squid
 - ssh-copy-id
 - sshuttle
+- stern
 - stow
 - subversion
 - terminal-notifier
@@ -252,6 +267,7 @@ brews:
 - unibilium
 - unixodbc
 - vault
+- velero
 - vifm
 - vim
 - watch
@@ -274,15 +290,12 @@ brews:
 - z
 casks:
 - alfred
-- amazon-ecs-cli
 - amethyst
-- autojump
-- autopep8
 - blender
-- caskroom/versions/java8
 - charles
 - chromedriver
 - cyberduck
+- dbeaver-community
 - disk-inventory-x
 - docker
 - dotnet-sdk
@@ -291,11 +304,13 @@ casks:
 - eclipse-ide
 - firefox
 - gitter
-- gobuffalo/tap/buffalo
+- goland
 - google-chrome
 - google-cloud-sdk
 - hammerspoon
+- homebrew/cask-versions/adoptopenjdk8
 - iterm2
+- java
 - kindle
 - kitematic
 - macpass
@@ -316,16 +331,12 @@ casks:
 - pluralsight
 - postman
 - powershell
-- prometheus
 - santa
 - screenflick
 - skype
 - slack
 - spectacle
-- spruce
-- stern
 - the-unarchiver
-- tunnelblick
 - vagrant
 - virtualbox
 - virtualbox-extension-pack
@@ -346,9 +357,7 @@ taps:
 - domt4/autoupdate
 - facebook/fb
 - habitat-sh/habitat
-- homebrew/bundle
 - homebrew/cask
-- homebrew/core
 - homebrew/services
 - jesseduffield/lazygit
 - ksonnet/tap
